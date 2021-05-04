@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "http://kogecoin.io"
+baseURL = "https://kogecoin.io"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"
