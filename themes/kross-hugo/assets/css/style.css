@@ -205,11 +205,13 @@ select:focus {
 }
 
 a.text-dark:hover {
-  color: var(--primary-color) !important
+/*  color: var(--primary-color) !important */
+  color: #006fe6 !important
 }
 
 a:hover {
-  color: var(--primary-color)
+/*  color: var(--primary-color) */
+  color: #006fe6
 }
 
 .slick-slide {
