@@ -9,9 +9,9 @@ author_signature : ""
 
 <br/>
 
-<p>Why buy KogeCoin? To take advantage of the massive HODLERs' airdrop, of course!</p>
+<p>Why buy KogeCoin? To take advantage of the massive HODLERs' airdrop, of course! KogeCoin rewards its holders. We are a coin for the community.</p>
 
-<p>You <b>cannot</b> buy KogeCoin yet. After launch, you may be able purchase on Quickswap using the following steps.</p>
+<p>You <b>cannot</b> buy KogeCoin yet as we have not yet launched. After launch, you may be able purchase on Quickswap using the following steps.</p>
 
 <p>
 From Matic Network:
