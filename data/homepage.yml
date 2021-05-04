@@ -7,8 +7,8 @@ about:
   content: "KogeCoin is a deflationary community coin for early Quickswap adopters.
     All Quickswap users from before timestamp are eligible for a Genesis airdrop that
     is equal to 23% of the total initial supply. To reward HODLERs, 75% of the total initial supply, along with any transaction fees it accumulates, will be airdropped to token holders 1 month after
-    Genesis. This means that every 1 $KOGECOIN you hold, you'll get another at least
-    another 3 $KOGECOIN. \n\nTransactions will incur a 2% fee, about half of which will be burned
+    Genesis. This means that every 1 KOGECOIN you hold, you'll get another at least
+    another 3 KOGECOIN. \n\nTransactions will incur a 2% fee, about half of which will be burned
     and another half distributed to all holders. Transaction fees accrued to the Genesis airdrop wallet will be burned. It is always be better to claim early to start collecting the transaction fees!"
   button:
     enable: false
