@@ -32,24 +32,20 @@ URL = "plugins/shuffle/shuffle.min.js"
 
 # menu
 [[menu.main]]
-URL = "about"
-name = "About"
+URL = "howtobuy"
+name = "How to Buy"
 weight = 2
 
 [[menu.main]]
-URL = "blog"
-name = "Blog"
+URL = "/#"
+name = "Claim Genesis Airdrop"
 weight = 3
 
 [[menu.main]]
-URL = "portfolio"
-name = "Portfolio"
+URL = "/#"
+name = "Trade on QuickSwap"
 weight = 4
 
-[[menu.main]]
-URL = "contact"
-name = "Contact"
-weight = 5
 
 
 # default parameters
@@ -68,7 +64,10 @@ description = "This is meta description"
 # google analitycs
 google_analitycs_id = "Your ID"
 # copyright
-copyright = "Copyrighht &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
+copyright = "Made with Love for the Polygon/Matic community"
+twitter = "https://twitter.com/kogecoin"
+telegram = "https://t.me/kogecoin"
+medium = "https://medium.com/@kogecoin"
 
 
 # contact
@@ -95,5 +94,5 @@ URL = "#"
 icon = "ti-dribbble"
 
 [[params.social]]
-URL = "#"
+URL = "https://twitter.com/kogecoin"
 icon = "ti-twitter-alt"

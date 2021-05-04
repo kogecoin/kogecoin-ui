@@ -1,7 +1,7 @@
 ---
 banner:
   title: Deflationary. <a href="#community-launch">Community-Launched</a>. Built on
-    Matic/Polygon.
+    Polygon/Matic.
 about:
   enable: true
   content: "KogeCoin is a deflationary community coin for early Quickswap adopters.
@@ -22,7 +22,7 @@ skill:
   - title: Genesis Airdrop - to All QuickSwap Users
     progress: 22.5%
     color: "#fdb157"
-  - title: HODLers Airdrop - to All Holders 1 Month After Genesis
+  - title: HODLers Airdrop - to All Holders 1 Month After
     progress: 75%
     color: "#9473e6"
   - title: Marketing - Community Directed Spending
