@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost:8080/about/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/blog/amazon-increase-income.1/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/blog/amazon-increase-income.2/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/blog/amazon-increase-income.3/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/blog/amazon-increase-income.4/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/blog/amazon-increase-income.5/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/blog/amazon-increase-income/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/blog/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/contact/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/portfolio/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/tags/</loc>
+  </url>
+  
+</urlset>

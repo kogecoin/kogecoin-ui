@@ -1,0 +1,138 @@
+---
+banner:
+  title: Deflationary. <a href="#community-launch">Community-Launched</a>. Built on
+    Matic/Polygon.
+about:
+  enable: true
+  content: "KogeCoin is a deflationary community coin for early Quickswap adopters.
+    All Quickswap users from before timestamp are eligible for a Genesis airdrop that
+    is equal to 22.5% of the total initial supply. To reward HODLERs and increase
+    adoption, another 75% of tokens will be airdropped to token holders 1 month after
+    Genesis. For every 1 KogeCoin you hold at that time, you'll get another at least
+    another 3! \n\nTransactions will incur a 2% fee, about half of which will be burned
+    and another half distributed to all holders. "
+  button:
+    enable: false
+    label: know more
+    URL: about
+skill:
+  enable: true
+  title: Community Launch Mechanism
+  item:
+  - title: Genesis Airdrop - to All QuickSwap Users
+    progress: 22.5%
+    color: "#fdb157"
+  - title: HODLers Airdrop - to All Holders 1 Month After Genesis
+    progress: 75%
+    color: "#9473e6"
+  - title: Marketing - Community Directed Spending
+    progress: 1.25%
+    color: "#bdecf6"
+  - title: Dev - Development Expenses
+    progress: 1.25%
+    color: "#ffbcaa"
+experience:
+  enable: true
+  title: Tokeonomics
+  item:
+  - logo: images/experience/icon-1.png
+    title: Initial Supply
+    company: 100 billion
+    duration: ''
+  - logo: images/experience/icon-2.png
+    title: Transaction Fee
+    company: 2%
+    duration: ''
+education:
+  enable: true
+  title: RoadMap
+  item:
+  - title: Genesis Airdrop
+    year: May 2021
+    academy: ''
+  - title: HODLers' Airdrop
+    year: June 2021
+    academy: ''
+  - title: Exchange Listings, Farming Partnerships, Youtube/Tiktok Ads, Meme Contests
+    year: May-June 2021
+    academy: ''
+  - title: NFTs, Defi Integrations, and More!
+    year: July 2021
+    academy: ''
+service:
+  enable: false
+  title: Services
+  item:
+  - title: UI Design
+    icon: ti-palette
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    highlighted: false
+  - title: UX Design
+    icon: ti-vector
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    highlighted: true
+  - title: Interaction Design
+    icon: ti-panel
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    highlighted: false
+portfolio:
+  enable: false
+  title: Portfolio
+  item_show: "5"
+testimonial:
+  enable: false
+  title: Testimonials
+  item:
+  - name: Jesica Gomez
+    image: images/testimonial/client-1.png
+    designation: CEO, Funder
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit
+      esse cillum dolore eu fugiat nulla pariatur.
+  - name: Shirley Scot
+    image: images/testimonial/client-1.png
+    designation: CEO, Funder
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit
+      esse cillum dolore eu fugiat nulla pariatur.
+  - name: Jessica Julie
+    image: images/testimonial/client-1.png
+    designation: CEO, Funder
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit
+      esse cillum dolore eu fugiat nulla pariatur.
+clients_logo_slider:
+  enable: true
+  item:
+  - logo: images/clients-logo/client-logo-1.png
+    URL: http://examplesite.com
+  - logo: images/clients-logo/client-logo-2.png
+    URL: "#"
+  - logo: images/clients-logo/client-logo-3.png
+    URL: http://examplesite.com
+  - logo: images/clients-logo/client-logo-4.png
+    URL: "#"
+  - logo: images/clients-logo/client-logo-5.png
+    URL: http://examplesite.com
+  - logo: images/clients-logo/client-logo-1.png
+    URL: "#"
+  - logo: images/clients-logo/client-logo-2.png
+    URL: http://examplesite.com
+  - logo: images/clients-logo/client-logo-3.png
+    URL: "#"
+  - logo: images/clients-logo/client-logo-4.png
+    URL: http://examplesite.com
+  - logo: images/clients-logo/client-logo-5.png
+    URL: "#"
+blog:
+  enable: false
+  title: Blogs
