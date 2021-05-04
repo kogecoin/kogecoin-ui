@@ -51,12 +51,12 @@ logo = "images/logo.png"
 # theme color
 theme_color = "#41228e"
 # contact info
-phone = "+880 2544 658 256"
-email = "steve.fruits@email.com"
-address = "125/A, CA Commercial Area, California, USA"
+phone = ""
+email = ""
+address = ""
 # meta description
-author = "Johnathan Smith"
-description = "This is meta description"
+author = "The Community"
+description = "KogeCoin is a deflationary meme token built for the QuickSwap community on Polygon/Matic."
 # google analitycs
 google_analitycs_id = "Your ID"
 # copyright
