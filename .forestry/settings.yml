@@ -25,7 +25,7 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: content
+  path: data
   label: Pages
   create: all
   match: "*"
