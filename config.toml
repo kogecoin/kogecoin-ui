@@ -41,10 +41,6 @@ URL = "/#"
 name = "Claim Genesis Airdrop"
 weight = 3
 
-[[menu.main]]
-URL = "/#"
-name = "Trade on QuickSwap"
-weight = 4
 
 
 

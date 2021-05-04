@@ -23,7 +23,7 @@ body {
 p {
   font-weight: 400;
   color: #4c4c4c;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.8;
   font-family: roboto, sans-serif
 }
@@ -176,7 +176,7 @@ body {
 
 ol,
 ul {
-  list-style-type: none;
+  /* list-style-type: none; */
   margin: 0
 }
 
@@ -217,8 +217,8 @@ a:hover {
 }
 
 .section {
-  padding-top: 120px;
-  margin-top: -40px;
+  padding-top: 130px;
+  margin-top: -50px;
   padding-bottom: 80px
 }
 

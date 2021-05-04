@@ -1,5 +1,5 @@
 work_process:
-  enable : true
+  enable : false
   title : "Work Process"
   item:
   - title : "Research and Plan"
@@ -16,7 +16,7 @@ work_process:
 
 
 team:
-  enable: true
+  enable: false
   title : "My Team"
   team_member:
     - title : "Jack Schenziwe"
