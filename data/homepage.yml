@@ -4,13 +4,11 @@ banner:
    QuickSwap Meme Coin.
 about:
   enable: true
-  content: "KogeCoin is a deflationary community token for early Quickswap adopters.
+  content: "KogeCoin is a deflationary community token for the nascent QuickSwap/Matic Community.
     Everyone who has made a transaction on Quickswap before May 3, 2021 5PM UTC is eligible for a Genesis airdrop that
-    is equal to 23% of the total initial supply. You can check if you're on the airdrop list [here](https://docs.google.com/spreadsheets/d/1vhOtpMwMTIS4vmDJoMSCS99mgOyK3-guAXh_1BxtvBQ/edit?usp=sharing).\n\n
-    Another 75% of the total initial supply, along with any transaction fees it accumulates, will be airdropped to token holders 1 month after
-    Genesis. This means that every 1 KOGECOIN you HODL, you'll get another at least
-    another 3 KOGECOIN. Fiat exchange listings will be pursued after this second airdrop. \n\nTransactions will incur a 2% fee, about half of which will be burned
-    and another half distributed to all holders. Transaction fees accrued to the Genesis airdrop wallet will be burned. It is always be better to claim early to start collecting the transaction fees!"
+    is equal to 96% of the total initial supply. You can check if you're on the airdrop list [here](https://docs.google.com/spreadsheets/d/1vhOtpMwMTIS4vmDJoMSCS99mgOyK3-guAXh_1BxtvBQ/edit?usp=sharing).\n\n
+    Any unclaimed amounts 1 month following Genesis, along with any transaction fees it accumulates, will be airdropped to existing token holders. Fiat exchange listings will be pursued after this second airdrop. \n\nTransactions will incur a 2% fee, about half of which will be burned
+    and another half distributed to all holders. It is always be better to claim early to start collecting the transaction fees!"
   button:
     enable: no
     label: Claim Genesis Airdrop
@@ -20,16 +18,16 @@ skill:
   title: Community Launch Mechanism
   item:
   - title: Genesis Airdrop - to All QuickSwap Users
-    progress: 23%
+    progress: 96%
     color: "#fdb157"
   - title: HODLers Airdrop - to All Holders 1 Month After
-    progress: 75%
+    progress: TBD
     color: "#9473e6"
   - title: Marketing - Community Directed
-    progress: 1%
+    progress: 2%
     color: "#bdecf6"
   - title: Dev - Development Expenses
-    progress: 1%
+    progress: 2%
     color: "#ffbcaa"
 experience:
   enable: true
