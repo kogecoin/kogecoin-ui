@@ -1,0 +1,126 @@
+<script>
+let claim;
+/*
+var merkleFile;
+jQuery.get('../data/merkle_output.txt', function(data) {
+  merkleFile = data;
+});*/
+
+/*$( document ).ready(function() { */
+jQuery.getJSON('../data/merkle_output.txt', function(data) {
+  const merkleFile = data;
+/*  const merkleFile = ''; */
+  const abi = [{"inputs":[{"internalType":"address","name":"token_","type":"address"},{"internalType":"bytes32","name":"merkleRoot_","type":"bytes32"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"uint256","name":"index","type":"uint256"},{"indexed":false,"internalType":"address","name":"account","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"Claimed","type":"event"},{"inputs":[],"name":"burn","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"},{"internalType":"address","name":"account","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"},{"internalType":"bytes32[]","name":"merkleProof","type":"bytes32[]"}],"name":"claim","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"_token","type":"address"},{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"collectDust","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"deployer","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"end","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"}],"name":"isClaimed","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"lastCall","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"merkleRoot","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"token","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"}];
+
+  const merkleDistributorContractAddress = '0x8896C47Cf854644cDC4Dd949a11048a57bDBA9Bc';
+
+  const setClaimText = (claimText) => {
+    $('#claimText').html(claimText);
+  }
+
+  const setClaimButtonText = (text) => {
+    $('#claimButton').html(text);
+  }
+
+  let address;
+  let merkle;
+  let index;
+  let amount;
+  let amountStr;
+  let merkleProof;
+  let merkleContract;
+  let gasPrice;
+  let gasLimit;
+
+  const checkClaim = () => {
+      merkleContract.methods.isClaimed(index).call().then((claimed) => {
+        if (claimed) {
+          setClaimText('Claimed ' + amountStr + ' KOGECOIN');
+          setClaimButtonText('Claimed');
+          $('#claimButton').attr('disabled', true);
+        } else {
+          setClaimText(amountStr + ' KOGECOIN');
+        }
+      });
+  }
+
+  claim = () => {
+      console.log('Claiming for ', address)
+      merkleContract.methods.claim(index, address, amount, merkleProof)
+      .estimateGas({
+        from: address,
+        gasPrice: gasPrice
+      },
+      function(error, gasLimit) {
+        console.log("Gas limit estimate = ", gasLimit, error);
+
+      merkleContract.methods.claim(index, address, amount, merkleProof).send({
+        from: address,
+        gas: gasLimit,
+        gasPrice: gasPrice
+      })
+      .on('transactionHash', function(hash){
+        setClaimText('Claiming...')
+        console.log("Approval transaction created = https://explorer-mainnet.maticvigil.com/tx/" + hash);
+      })
+      .on('receipt', async function(receipt){
+          checkClaim();
+       });
+     });
+  }
+
+    if (window.ethereum) {
+      window.web3 = new Web3(ethereum);
+      try {
+        ethereum.enable().then(() => {
+          web3.eth.getAccounts().then((wallet) => {
+            console.log("WALLET: ", wallet);
+            if (wallet && wallet.length >= 1) address = wallet[0];
+            merkleContract = new web3.eth.Contract(abi, merkleDistributorContractAddress);
+            web3.eth.getGasPrice().then(price => {
+             gasPrice = Number(price);
+             console.log("gasPrice = ", gasPrice);
+             main();
+            });
+            merkle = _.get(merkleFile.claims, address);
+
+            if (!merkle) {
+              setClaimText('User has no allocation.');
+              $('#claimButton').attr('disabled', true);
+              return 0;
+            }
+            index = merkle.index;
+            amount = merkle.amount;
+              amountStr = (Math.floor(parseInt(amount, 16)) / 10 ** 9).toFixed(9);
+            merkleProof = merkle.proof;
+            setClaimText(amountStr + ' KOGECOIN');
+
+            checkClaim();
+          });
+        });
+      } catch (error) {
+        alert("User rejected permission");
+      }
+    } else {
+      alert('Use a browser with MetaMask to claim');
+    }
+
+  function main() {
+    console.log('Connected');
+  }
+
+});
+
+
+</script>
+<div class="main">
+  <br/>
+  <p><div class="description"><h4>TESTING ONLY. DO NOT CLICK</h4></div></p>
+<!--      <img class="logo" src="https://svgur.com/i/Rt8.svg" />
+Claim your KOGECOIN genesis allocation here! -->
+  <p><div class="yourClaim">Your allocation:</div></p>
+  <p><div class="parent"><div id="claimText"></div></div></p>
+  <p><button id="claimButton" onClick="claim()">Claim KOGECOIN</button></p>
+  <p>This page requires a MetaMask connection. Use a browser with MetaMask and set the network to the Matic Mainnet if you don't see your allocation.</p>
+  <p>The airdrop uses the <a href="https://medium.com/iroiro-social-token/learn-how-to-distribute-tokens-from-uniswap-67448856a328#:~:text=Uniswap%2Fmerkle%2Ddistributor&text=Therefore%2C%20the%20Merkle%20Proof%20method,Merkle%20trees%20(hash%20trees).&text=The%20pre%2Dextracted%20wallet%20address,final%20Merkle%20Root%20is%20derived.">Merkle proof</a> mechanism introduced by Uniswap. The proof may take some time to load in slower internet connections. Keep this page open until MetaMask pops up to connect.</p>
+</div>

@@ -15,6 +15,10 @@ URL = "plugins/slick/slick.css"
 [[params.plugins.css]]
 URL = "plugins/themify-icons/themify-icons.css"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 # js plugin
 [[params.plugins.js]]
