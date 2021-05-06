@@ -10,7 +10,7 @@ about:
     Too often, \"fair launched\" meme tokens get sniped by bots who then dump on the rest of us. By airdropping to everyone in the community, KogeCoin avoids this problem and allows the average user to benefit from a meme coin launch.
     \n\nThe devs are fully committed to KogeCoin and the Polygon/Matic defi space. Many airdropped tokens have lasting value due to their attachment with the community (e.g. AuroraCoin, 8M Mcap). We view KogeCoin as a token that allows us to grow with the community. Holders of KogeCoin will benefit from many projects in the farming/defi space to come!
     \n\n
-    All tokens that were allocated to the initial airdrop but went unclaimed 1 month following Genesis, along with any transaction fees they accumulated, will be redistributed to existing token holders in a second airdrop. It is always be better to claim early to start collecting the transaction fees!
+    Transactions will carry a 2% fee, about half of which will be burned and another half distributed to all holders. All tokens that were allocated to the initial airdrop but went unclaimed 1 month following Genesis, along with any transaction fees they accumulated, will be redistributed to existing token holders in a second airdrop. It is always be better to claim early to start collecting the transaction fees!
     "
   button:
     enable: no
@@ -43,7 +43,7 @@ experience:
   - logo: images/experience/icon-2.png
     title: Transaction Fee
     company: 2%
-    duration: 'Automatically burned/distributed to existing holders'
+    duration: ''
 education:
   enable: true
   title: RoadMap
