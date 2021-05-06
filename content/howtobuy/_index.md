@@ -9,7 +9,7 @@ author_signature : ""
 
 <br/>
 
-<p>Why buy KogeCoin? To take advantage of the massive HODLERs' airdrop, of course! KogeCoin rewards its holders. We are a coin for the community.</p>
+<p>Why buy KogeCoin? To grow with the community and to benefit from the many projects the devs have planned for the Polygon/Matic ecosystem!</p>
 
 <p>You <b>cannot</b> buy KogeCoin yet as we have not yet launched. After launch, you may be able purchase on Quickswap using the following steps.</p>
 
@@ -26,7 +26,7 @@ From Ethereum Chain:
 <ol>
 <li> Add the Matic Network to MetaMask: <a href="https://docs.matic.network/docs/develop/metamask/config-matic/">https://docs.matic.network/docs/develop/metamask/config-matic/</a>.</li>
 <li> Use the official Matic bridge to bridge some ETH to the Matic Network: <a href="https://wallet.matic.network/bridge/">https://wallet.matic.network/bridge/</a>.</li>
-<li> Claim some Matic from a faucet for gas: <a href="https://matic.supply">https://matic.supply</a>. Enjoy the near-zero gas fees! Remember to refill the faucet with some MATIC once you're rich.</li>
+<li> Claim some Matic from the QuickSwap faucet <a href="https://twitter.com/QuickswapDEX/status/1339623100955111427?s=20">https://twitter.com/QuickswapDEX/status/1339623100955111427?s=20</a> or a community faucet <a href="https://matic.supply">https://matic.supply</a> for gas. Welcome, and enjoy the near-zero gas fees! Remember to refill the community faucet with some MATIC once you're rich.</li>
 <li> Add KogeCoin token to MetaMask.</li>
 <li> Trade on QuickSwap.</li>
 </ol>
@@ -38,7 +38,7 @@ From Binance Smart Chain:
 <li> Add Matic Network to MetaMask: <a href="https://docs.matic.network/docs/develop/metamask/config-matic/">https://docs.matic.network/docs/develop/metamask/config-matic/</a>.</li>
 <li> Convert some funds to DAI.</li>
 <li> Use the xPollinate bridge to move the DAI to the Matic Chain. Be sure to select "Binance Smart Chain" as the starting chain and "Matic Mainnet" as the ending chain, and check that there is enough exit liquidity to do so: <a href="https://www.xpollinate.io">https://www.xpollinate.io</a>.</li>
-<li> Claim some Matic from a faucet: <a href="https://matic.supply">https://matic.supply</a>. Enjoy the near-zero gas fees! Remember to refill the faucet with some MATIC once you're rich.</li>
+<li> Claim some Matic from the QuickSwap faucet <a href="https://twitter.com/QuickswapDEX/status/1339623100955111427?s=20">https://twitter.com/QuickswapDEX/status/1339623100955111427?s=20</a> or a community faucet <a href="https://matic.supply">https://matic.supply</a> for gas. Welcome, and enjoy the near-zero gas fees! Remember to refill the community faucet with some MATIC once you're rich.</li>
 <li> Add KogeCoin token to MetaMask.</li>
 <li> Trade on QuickSwap.
 </ol>
