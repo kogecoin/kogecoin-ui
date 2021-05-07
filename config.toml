@@ -52,7 +52,7 @@ weight = 3
 [params]
 home = "Home"
 logo = "images/logo.png"
-# theme color
+# theme color 41228e
 theme_color = "#41228e"
 # contact info
 phone = ""

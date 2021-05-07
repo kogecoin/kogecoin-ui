@@ -220,21 +220,21 @@
   {{ if .Site.Data.homepage.testimonial.enable }}
   {{ with .Site.Data.homepage.testimonial }}
   <!-- testimonial -->
-  <section class="section bg-primary position-relative testimonial-bg-shapes">
+  <section class="section bg-gray position-relative testimonial-bg-shapes">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title text-white mb-5">{{ .title | markdownify }}</h2>
+          <h2 class="section-title mb-5">{{ .title | markdownify }}</h2>
         </div>
-        <div class="col-lg-10 mx-auto testimonial-slider">
+        <div class="col-lg-10">
           {{ range .item }}
           <!-- slider-item -->
-          <div class="text-center testimonial-content">
-            <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-            <p class="text-white mb-4">{{.content | markdownify}}</p>
-            <img class="img-fluid rounded-circle mb-4 d-inline-block" src="{{.image | absURL }}" alt="client-image">
-            <h4 class="text-white">{{.name }}</h4>
-            <h6 class="text-light mb-4">{{ .designation }}</h6>
+          <div class="text-left">
+<!--            <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i> -->
+            <p class="mb-4">{{.content | markdownify}}</p>
+<!--            <img class="img-fluid rounded-circle mb-4 d-inline-block" src="{{.image | absURL }}" alt="client-image"> -->
+<!--             <h4 class="text-white">{{.name }}</h4> -->
+<!--             <h6 class="text-light mb-4">{{ .designation }}</h6> -->
           </div>
           {{ end }}
         </div>
@@ -243,10 +243,10 @@
     <!-- bg shapes -->
     <img src="{{`images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map">
     <img src="{{`images/illustrations/dots-group-v.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-1">
-    <img src="{{`images/illustrations/leaf-orange.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-2">
+<!--    <img src="{{`images/illustrations/leaf-orange.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-2"> -->
     <img src="{{`images/illustrations/dots-group-sm.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-3">
-    <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-4">
-    <img src="{{`images/illustrations/leaf-cyan.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-5">
+<!--    <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-4"> -->
+<!--    <img src="{{`images/illustrations/leaf-cyan.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-5"> -->
   </section>
   <!-- /testimonial -->
   {{ end }}
