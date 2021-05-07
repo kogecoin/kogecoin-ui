@@ -13,9 +13,9 @@ about:
     Transactions will carry a 2% fee, about half of which will be burned and another half distributed to all holders. All tokens that were allocated to the initial airdrop but went unclaimed 1 month following Genesis, along with any transaction fees they accumulated, will be redistributed to existing token holders in a second airdrop. It is always be better to claim early to start collecting the transaction fees!
     "
   button:
-    enable: no
+    enable: yes
     label: Claim Genesis Airdrop
-    URL: about
+    URL: claimgenesis
 skill:
   enable: true
   title: Community Launch Mechanism
