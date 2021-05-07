@@ -41,7 +41,7 @@ name = "How to Buy"
 weight = 2
 
 [[menu.main]]
-URL = "/#"
+URL = "claimgenesis"
 name = "Claim Genesis Airdrop"
 weight = 3
 
