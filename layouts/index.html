@@ -103,7 +103,7 @@
 
   {{ if .Site.Data.homepage.experience.enable }}
   {{ with .Site.Data.homepage.experience }}
-  <!-- experience -->
+  <!-- Tokenomics -->
   <section class="section">
     <div class="container">
       <div class="row justify-content-around">
@@ -127,6 +127,36 @@
           <p class="mb-0"></p>
           <h4>Transaction Fee</h4>
           <h6 class="text-light">2%</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Tokenomics -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">Live Statistics</h2>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <p class="mb-0"></p>
+          <h4>Price</h4>
+          <h5><span class="showQuickSwapPrice">Loading</span></h5>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <p class="mb-0"></p>
+          <h4>Market Cap</h4>
+          <h5><span class="showMarketCap">Loading</span></h5>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <p class="mb-0"></p>
+          <h4>Airdrop Value</h4>
+          <h5><span class="showAirdropValue">Loading</span></h5>
+        </div>
+        <div class="col-lg-12 text-center">
+          <br/>
+          <br/>
+          <h6 class="text-light">*If you'd like to supply liquidity and earn trade fees, the main trading pair on Quickswap is KOGECOIN-USDC</h6>
         </div>
       </div>
     </div>
@@ -324,10 +354,16 @@
       }
     ];
 
+    const abiQuickSwap = [{"type":"function","stateMutability":"view","outputs":[{"type":"uint256[]","name":"amounts","internalType":"uint256[]"}],"name":"getAmountsIn","inputs":[{"type":"uint256","name":"amountOut","internalType":"uint256"},{"type":"address[]","name":"path","internalType":"address[]"}]},{"type":"function","stateMutability":"view","outputs":[{"type":"uint256[]","name":"amounts","internalType":"uint256[]"}],"name":"getAmountsOut","inputs":[{"type":"uint256","name":"amountIn","internalType":"uint256"},{"type":"address[]","name":"path","internalType":"address[]"}]}]
+
     var contract = new web3.eth.Contract(abi,"0x13748d548D95D78a3c83fe3F32604B4796CFfa23");
+    var QuickSwapContract = new web3.eth.Contract(abiQuickSwap,"0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff");
 
     const showTotalSupply = document.querySelector('.showTotalSupply');
     const showCurrentSupply = document.querySelector('.showCurrentSupply');
+    const showQuickSwapPrice = document.querySelector('.showQuickSwapPrice');
+    const showMarketCap = document.querySelector('.showMarketCap');
+    const showAirdropValue = document.querySelector('.showAirdropValue');
 
     function numberWithCommas(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -338,6 +374,10 @@
       showTotalSupply.innerHTML = numberWithCommas(~~(totalSupply/1000000000));
       const totalFees = await contract.methods.totalFees.call().call();
       showCurrentSupply.innerHTML = numberWithCommas(~~((totalSupply-totalFees)/1000000000));
+      const QuickSwapAmt = await QuickSwapContract.methods.getAmountsOut(100000,["0x2791bca1f2de4661ed88a30c99a7a9449aa84174","0x13748d548D95D78a3c83fe3F32604B4796CFfa23"]).call();
+      showQuickSwapPrice.innerHTML = '$' + Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*1000000)/1000000;
+      showMarketCap.innerHTML = '$' + numberWithCommas(Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*(totalSupply-totalFees)/1000000000));
+      showAirdropValue.innerHTML = '$' + Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*1187.262547*1000)/1000;
     }
 
     getSupply();
