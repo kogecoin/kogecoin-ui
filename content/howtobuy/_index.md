@@ -42,4 +42,8 @@ From Binance Smart Chain:
 </ol>
 </p>
 
+<div class="col-lg-12"><br/>
+  <h6 class="text-light">*If you'd like to supply liquidity and earn trade fees, the main trading pair on Quickswap is KOGECOIN-USDC</h6>
+</div>
+
 {{< /rawhtml >}}
