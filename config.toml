@@ -60,11 +60,11 @@ email = ""
 address = ""
 # meta description
 author = "The Community"
-description = "KogeCoin is a deflationary meme token built for the QuickSwap community on Polygon/Matic."
+description = "KogeCoin is a deflationary meme token built for the QuickSwap Community on Polygon/Matic."
 # google analitycs
 google_analitycs_id = "Your ID"
 # copyright
-copyright = "Made with Love for the Polygon/Matic community"
+copyright = "Made with Love for the Polygon/Matic Community"
 twitter = "https://twitter.com/kogecoin"
 telegram = "https://t.me/kogecoin"
 medium = "https://medium.com/@kogecoin"
