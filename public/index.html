@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us"><head><script src="/livereload.js?port=1313&amp;mindelay=10&amp;v=2" data-no-instant defer></script>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <title>KogeCoin.io</title>
 
@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="KogeCoin is a deflationary meme token built for the QuickSwap Community on Polygon/Matic.">
   <meta name="author" content="The Community">
-  <meta name="generator" content="Hugo 0.75.1" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   <style>
     :root{
@@ -33,6 +33,10 @@
   <link rel="shortcut icon" href="http://localhost:1313/images/favicon.png " type="image/x-icon">
   <link rel="icon" href="http://localhost:1313/images/favicon.png " type="image/x-icon">
 
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+
 </head>
 <body>
 <!-- preloader start -->
@@ -51,7 +55,7 @@
     <div class="collapse navbar-collapse text-center" id="navigation">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="http://localhost:1313/">Home</a>
+          <a class="nav-link" href="http://localhost:1313/"> Home </a>
         </li>
         
         
@@ -62,7 +66,7 @@
         
         
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost:1313/">Claim Genesis Airdrop</a>
+          <a class="nav-link" href="http://localhost:1313/claimgenesis">Claim Genesis Airdrop</a>
         </li>
         
         
@@ -70,6 +74,7 @@
     </div>
   </nav>
 </header>
+
 
   
   <section class="hero-area bg-primary overflow-hidden" id="parallax">
@@ -105,10 +110,16 @@
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
           
-          <p class="font-secondary lead text-dark"><p>KogeCoin is a deflationary community token for early QuickSwap adopters. Everyone who has made a transaction on QuickSwap before May 3, 2021 5PM UTC is eligible for a Genesis airdrop that is equal to 23% of the total initial supply. You can check if you&rsquo;re on the airdrop list <a href="https://docs.google.com/spreadsheets/d/1vhOtpMwMTIS4vmDJoMSCS99mgOyK3-guAXh_1BxtvBQ/edit?usp=sharing">here</a>.</p>
-<p>Another 75% of the total initial supply, along with any transaction fees it accumulates, will be airdropped to token holders 1 month after Genesis. This means that every 1 KOGECOIN you HODL, you&rsquo;ll get another at least another 3 KOGECOIN. Fiat exchange listings will be pursued after this second airdrop.</p>
-<p>Transactions will incur a 2% fee, about half of which will be burned and another half distributed to all holders. Transaction fees accrued to the Genesis airdrop wallet will be burned. It is always be better to claim early to start collecting the transaction fees!</p>
+          <p class="font-secondary lead text-dark"><p>KogeCoin is a deflationary token for the nascent QuickSwap/Matic Community. Anyone who made a transaction on Quickswap before May 3, 2021 5PM UTC is eligible for a Genesis airdrop that is equal to 96% of the total initial supply. The initial airdrop will end around June 3, 2021 (block number 1622763836).</p>
+<p>Too often, &ldquo;fair launched&rdquo; tokens get sniped by bots who then dump on the rest of us. By airdropping to everyone in the community, KogeCoin avoids this problem and allows the average user to benefit from a launch.</p>
+<p>The devs are fully committed to KogeCoin and the Polygon/Matic defi space. Many airdropped tokens end up having lasting value due to their attachment to the community (e.g. AuroraCoin, $8M market cap). We view KogeCoin as a token that will allow us to grow with the community. Holders of KogeCoin will benefit from many projects in the farming/defi space to come!</p>
+<p>Similar to other deflationary tokens, transactions will carry a 2% fee, about half of which will be burned and another half distributed to all holders. It is always better to claim early to start collecting the transaction fees.</p>
+<p>Another benefit of holding is that all tokens that were allocated to the initial airdrop but went unclaimed for 1 month following Genesis, along with any transaction fees they accumulated, will be redistributed to existing token holders in a second airdrop.</p>
 </p>
+          
+          
+          <a href="http://localhost:1313/claimgenesis" class="btn btn-transparent">Claim Genesis Airdrop</a>
+          
           
           
         </div>
@@ -132,10 +143,10 @@
         <div class="col-lg-3 col-sm-6 mb-4">
           <div class="card shadow text-center">
             <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
-              <div class="wave" data-progress="23%"></div>
+              <div class="wave" data-progress="96%"></div>
             </div>
             <div class="card-footer bg-white">
-              <h4 class="card-title">Genesis Airdrop - to All QuickSwap Users (23%)</h4>
+              <h4 class="card-title">Genesis Airdrop - to All QuickSwap Users (96%)</h4>
             </div>
           </div>
         </div>
@@ -143,10 +154,10 @@
         <div class="col-lg-3 col-sm-6 mb-4">
           <div class="card shadow text-center">
             <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
-              <div class="wave" data-progress="75%"></div>
+              <div class="wave" data-progress="TBD"></div>
             </div>
             <div class="card-footer bg-white">
-              <h4 class="card-title">HODLers Airdrop - to All Holders 1 Month After (75%)</h4>
+              <h4 class="card-title">HODLers&#39; Airdrop - to All Holders 1 Month After (TBD)</h4>
             </div>
           </div>
         </div>
@@ -154,10 +165,10 @@
         <div class="col-lg-3 col-sm-6 mb-4">
           <div class="card shadow text-center">
             <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
-              <div class="wave" data-progress="1%"></div>
+              <div class="wave" data-progress="2%"></div>
             </div>
             <div class="card-footer bg-white">
-              <h4 class="card-title">Marketing - Community Directed (1%)</h4>
+              <h4 class="card-title">Marketing - Community Directed (2%)</h4>
             </div>
           </div>
         </div>
@@ -165,10 +176,10 @@
         <div class="col-lg-3 col-sm-6 mb-4">
           <div class="card shadow text-center">
             <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
-              <div class="wave" data-progress="1%"></div>
+              <div class="wave" data-progress="2%"></div>
             </div>
             <div class="card-footer bg-white">
-              <h4 class="card-title">Dev - Development Expenses (1%)</h4>
+              <h4 class="card-title">Dev - Development Expenses (2%)</h4>
             </div>
           </div>
         </div>
@@ -189,21 +200,54 @@
         <div class="col-lg-12 text-center">
           <h2 class="section-title">Tokenomics</h2>
         </div>
-        
         <div class="col-lg-3 col-md-4 text-center">
-          <img src="/images/experience/icon-1.png" alt="icon">
+          <img src="images/experience/icon-1.png" alt="icon">
           <p class="mb-0"></p>
           <h4>Initial Supply</h4>
-          <h6 class="text-light">100 billion</h6>
+          <h6 class="text-light"><span class="showTotalSupply">50,000,000</span></h6>
         </div>
-        
         <div class="col-lg-3 col-md-4 text-center">
-          <img src="/images/experience/icon-2.png" alt="icon">
+          <img src="images/experience/icon-1.png" alt="icon">
+          <p class="mb-0"></p>
+          <h4>Current Supply</h4>
+          <h6 class="text-light"><span class="showCurrentSupply">Loading</span></h6>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/icon-2.png" alt="icon">
           <p class="mb-0"></p>
           <h4>Transaction Fee</h4>
           <h6 class="text-light">2%</h6>
         </div>
-        
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">Live Statistics</h2>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <p class="mb-0"></p>
+          <h4>Price</h4>
+          <h5><span class="showQuickSwapPrice">Loading</span></h5>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <p class="mb-0"></p>
+          <h4>Market Cap</h4>
+          <h5><span class="showMarketCap">Loading</span></h5>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <p class="mb-0"></p>
+          <h4>Airdrop Value</h4>
+          <h5><span class="showAirdropValue">Loading</span></h5>
+        </div>
+        <div class="col-lg-12 text-center">
+          <br/>
+          <br/>
+          <h6 class="text-light">*If you'd like to supply liquidity and earn trade fees, the main trading pair on Quickswap is KOGECOIN-USDC</h6>
+        </div>
       </div>
     </div>
   </section>
@@ -227,21 +271,8 @@
               <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
             </div>
             <div>
-              <p class="text-dark mb-1">May 2021</p>
-              <h4>Genesis Airdrop</h4>
-              <p class="mb-0 text-light"></p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-6 col-md-6 mb-80">
-          <div class="d-flex">
-            <div class="mr-lg-5 mr-3">
-              <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
-            </div>
-            <div>
-              <p class="text-dark mb-1">June 2021</p>
-              <h4>HODLers&#39; Airdrop</h4>
+              <p class="text-dark mb-1">May-June 2021</p>
+              <h4>Genesis Airdrop &#43; HODLers&#39; Airdrop</h4>
               <p class="mb-0 text-light"></p>
             </div>
           </div>
@@ -254,7 +285,20 @@
             </div>
             <div>
               <p class="text-dark mb-1">May-June 2021</p>
-              <h4>Exchange Listings, Farming Partnerships, Youtube/Tiktok Ads, Meme Contests</h4>
+              <h4>LP Farming Tool &#43; Farming Partnerships</h4>
+              <p class="mb-0 text-light"></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-6 mb-80">
+          <div class="d-flex">
+            <div class="mr-lg-5 mr-3">
+              <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+            </div>
+            <div>
+              <p class="text-dark mb-1">May-June 2021</p>
+              <h4>Youtube/Tiktok Ads &#43; Meme Contests</h4>
               <p class="mb-0 text-light"></p>
             </div>
           </div>
@@ -267,7 +311,7 @@
             </div>
             <div>
               <p class="text-dark mb-1">July 2021</p>
-              <h4>NFTs, Defi Integrations, and More!</h4>
+              <h4>NFTs, Defi Integrations, Exchange Listings, and More!</h4>
               <p class="mb-0 text-light"></p>
             </div>
           </div>
@@ -290,12 +334,108 @@
 
 
   
+  
+  
+  <section class="section bg-gray position-relative testimonial-bg-shapes">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title mb-5">Contract Addresses</h2>
+        </div>
+        <div class="col-lg-10">
+          
+          
+          <div class="text-left">
+
+            <p class="mb-4">KOGECOIN Token: 0x13748d548D95D78a3c83fe3F32604B4796CFfa23<br/> Airdrop Distributor: 0x3BDeAe3A0DB5db37f260FeD77438Af91729573B2<br/> Dev Wallet: 0x00482B66aa7a69c9982C030cd9627A86288fFA2D<br/> Marketing Wallet: 0x4A170561126a1D765A6B80a081dB639945a8b53b<br/> Github: <a href="https://github.com/kogecoin/contracts">https://github.com/kogecoin/contracts</a></p>
+
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/images/backgrounds/map.png" alt="map" class="img-fluid bg-map">
+    <img src="/images/illustrations/dots-group-v.svg" alt="bg-shape" class="img-fluid bg-shape-1">
+
+    <img src="/images/illustrations/dots-group-sm.svg" alt="bg-shape" class="img-fluid bg-shape-3">
+
+
+  </section>
+  
+  
+  
 
 
   
 
   
 
+
+  <script>
+    const web3 = new Web3(new Web3.providers.HttpProvider("https://rpc-mainnet.maticvigil.com/v1/220e0ab20e859479dc3ece462f4d5699cd701a6b"))
+
+    const abi = [
+      {
+        "inputs": [],
+        "name": "totalFees",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "totalSupply",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ];
+
+    const abiQuickSwap = [{"type":"function","stateMutability":"view","outputs":[{"type":"uint256[]","name":"amounts","internalType":"uint256[]"}],"name":"getAmountsIn","inputs":[{"type":"uint256","name":"amountOut","internalType":"uint256"},{"type":"address[]","name":"path","internalType":"address[]"}]},{"type":"function","stateMutability":"view","outputs":[{"type":"uint256[]","name":"amounts","internalType":"uint256[]"}],"name":"getAmountsOut","inputs":[{"type":"uint256","name":"amountIn","internalType":"uint256"},{"type":"address[]","name":"path","internalType":"address[]"}]}]
+
+    var contract = new web3.eth.Contract(abi,"0x13748d548D95D78a3c83fe3F32604B4796CFfa23");
+    var QuickSwapContract = new web3.eth.Contract(abiQuickSwap,"0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff");
+
+    const showTotalSupply = document.querySelector('.showTotalSupply');
+    const showCurrentSupply = document.querySelector('.showCurrentSupply');
+    const showQuickSwapPrice = document.querySelector('.showQuickSwapPrice');
+    const showMarketCap = document.querySelector('.showMarketCap');
+    const showAirdropValue = document.querySelector('.showAirdropValue');
+
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+   const getSupply = async function(){
+      const totalSupply = await contract.methods.totalSupply.call().call();
+      showTotalSupply.innerHTML = numberWithCommas(~~(totalSupply/1000000000));
+      const totalFees = await contract.methods.totalFees.call().call();
+      showCurrentSupply.innerHTML = numberWithCommas(~~((totalSupply-totalFees)/1000000000));
+      const QuickSwapAmt = await QuickSwapContract.methods.getAmountsOut(100000,["0x2791bca1f2de4661ed88a30c99a7a9449aa84174","0x13748d548D95D78a3c83fe3F32604B4796CFfa23"]).call();
+      showQuickSwapPrice.innerHTML = '$' + Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*1000000)/1000000;
+      showMarketCap.innerHTML = '$' + numberWithCommas(Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*(totalSupply-totalFees)/1000000000));
+      showAirdropValue.innerHTML = '$' + Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*1187.262547*1000)/1000;
+    }
+
+    getSupply();
+
+
+  </script>
 
 
 
