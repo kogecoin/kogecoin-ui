@@ -44,7 +44,7 @@ From Binance Smart Chain:
 </p>
 
 <div class="col-lg-12"><br/>
-  <h6 class="text-light">*If you'd like to supply liquidity and earn trade fees, the main trading pair on QuickSwap is KOGECOIN-USDC</h6>
+  <h6 class="text-light">*If you'd like to supply liquidity and earn trade fees, our trading pairs on QuickSwap are KOGECOIN-MATIC and KOGECOIN-USDC.</h6>
 </div>
 
 {{< /rawhtml >}}
