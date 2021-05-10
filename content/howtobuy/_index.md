@@ -10,7 +10,7 @@ author_signature: ''
 
 <br/>
 
-<p>Why buy KogeCoin? To grow with the community and to benefit from the many projects the devs have planned for the Polygon/Matic ecosystem!</p>
+<p>Why buy KogeCoin? To grow with the community, of course. Also, there are 127 billion Dogecoin but only 50 million KogeCoin - the upside is enormous!</p>
 
 <p>
 From Matic Network:
