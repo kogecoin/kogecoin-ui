@@ -16,7 +16,7 @@ author_signature: ''
 From Matic Network:
 <ol>
 <li> Add KogeCoin token to MetaMask: 0x13748d548D95D78a3c83fe3F32604B4796CFfa23</li>
-<li> Buy on QuickSwap, and then set slippage to at least 4%.</li>
+<li> Buy on QuickSwap, with slippage set to at least 4%.</li>
 </ol>
 </p>
 
@@ -27,7 +27,7 @@ From Ethereum Chain:
 <li> Use the official Matic bridge to bridge some ETH to the Matic Network: <a href="https://wallet.matic.network/bridge/">https://wallet.matic.network/bridge/</a>.</li>
 <li> Claim some Matic from the community faucet <a href="https://matic.supply">https://matic.supply</a> for gas. Welcome, and enjoy near-zero gas fees! Remember to refill the community faucet with some MATIC to pay it forward.</li>
 <li> Add KogeCoin token to MetaMask.</li>
-<li> Buy on QuickSwap, and then set slippage to at least 4%.</li>
+<li> Buy on QuickSwap, with slippage set to at least 4%.</li>
 </ol>
 </p>
 
@@ -39,7 +39,7 @@ From Binance Smart Chain:
 <li> Use the xPollinate bridge to move the DAI to the Matic Chain. Be sure to select "Binance Smart Chain" as the starting chain and "Matic Mainnet" as the ending chain, and check that there is enough exit liquidity to do so: <a href="https://www.xpollinate.io">https://www.xpollinate.io</a>.</li>
 <li> Claim some Matic from the community faucet <a href="https://matic.supply">https://matic.supply</a> for gas. Welcome, and enjoy near-zero gas fees! Remember to refill the community faucet with some MATIC to pay it forward.</li>
 <li> Add KogeCoin token to MetaMask.</li>
-<li> Buy on QuickSwap, and then set slippage to at least 4%.
+<li> Buy on QuickSwap, with slippage set to at least 4%.
 </ol>
 </p>
 
