@@ -84,9 +84,9 @@ testimonial:
       image: ''
       designation: ''
       content: 'KOGECOIN Token: 0x13748d548D95D78a3c83fe3F32604B4796CFfa23<br/>
-        Airdrop Distributor: 0x3BDeAe3A0DB5db37f260FeD77438Af91729573B2<br/>
-        Dev Wallet: 0x00482B66aa7a69c9982C030cd9627A86288fFA2D<br/>
-        Marketing Wallet: 0x4A170561126a1D765A6B80a081dB639945a8b53b<br/>
+        Airdrop Distributor: <a href="https://explorer-mainnet.maticvigil.com/address/0x3BDeAe3A0DB5db37f260FeD77438Af91729573B2/transactions">0x3BDeAe3A0DB5db37f260FeD77438Af91729573B2</a><br/>
+        Marketing Wallet: <a href="https://explorer-mainnet.maticvigil.com/address/0x4A170561126a1D765A6B80a081dB639945a8b53b/transactions">0x4A170561126a1D765A6B80a081dB639945a8b53b</a><br/>
+        Dev Wallet: <a href="https://explorer-mainnet.maticvigil.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/>
         Github: https://github.com/kogecoin/contracts'
 clients_logo_slider:
   enable: false
