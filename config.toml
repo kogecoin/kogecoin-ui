@@ -45,6 +45,10 @@ URL = "claimgenesis"
 name = "Claim Genesis Airdrop"
 weight = 3
 
+[[menu.main]]
+URL = "https://kogefarm.io"
+name = "KogeFarm"
+weight = 4
 
 
 

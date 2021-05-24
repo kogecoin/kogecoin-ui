@@ -8,9 +8,9 @@ about:
     Anyone who's made a transaction on Quickswap before May 3, 2021 5PM UTC is eligible for a Genesis airdrop that
     is equal to 96% of the total initial supply. This airdrop will end around June 3, 2021 (block number 1622763836).\n\n
     Too often, \"fair launched\" meme tokens get sniped by bots who then dump on the rest of us. By airdropping to everyone, KogeCoin avoids this problem and allows the average user to benefit from a launch. Our goal is to make the Polygon community a nicer place to be.
-    \n\nThe devs are fully committed to KogeCoin and the Polygon/Matic defi space. Many airdropped tokens end up having lasting value due to their attachment to the community (e.g. AuroraCoin, $8M market cap). We view KogeCoin as a token that allows us to grow with the community.
+    \n\nThe devs are fully committed to KogeCoin and the Polygon/Matic defi space. Holders of KogeCoin will benefit from [KogeFarm.io](https://kogefarm.io/), an auto-compounding utility we built for defi users. Many airdropped tokens end up having lasting value due to their attachment to the community. We view KogeCoin as a token that allows us to grow with the community.
     \n\n
-    Similar to other deflationary tokens, transactions will carry a 2% fee, about half of which will be burned and another half distributed to all holders. It is always better to claim early to start collecting the transaction fees. Another benefit of holding is that all tokens that were allocated to the initial airdrop but went unclaimed for 1 month following Genesis, along with any transaction fees they accumulated, will be redistributed to existing token holders in a second airdrop. Finally, holders of KogeCoin will benefit from the devs' future projects in the farming/defi space.
+    Similar to other deflationary tokens, transactions will carry a 2% fee, about half of which will be burned and another half distributed to all holders. It is always better to claim early to start collecting the transaction fees. Another benefit of holding is that all tokens that were allocated to the initial airdrop but went unclaimed for 1 month following Genesis, along with any transaction fees they accumulated, will be redistributed to existing token holders in a second airdrop which may be in the form of staking at [KogeFarm.io](https://kogefarm.io/).
     "
   button:
     enable: yes
@@ -83,7 +83,7 @@ testimonial:
     - name: ''
       image: ''
       designation: ''
-      content: 'KOGECOIN Token: 0x13748d548D95D78a3c83fe3F32604B4796CFfa23<br/>
+      content: 'KOGECOIN Token: <a href="https://explorer-mainnet.maticvigil.com/address/0x13748d548D95D78a3c83fe3F32604B4796CFfa23/transactions">0x13748d548D95D78a3c83fe3F32604B4796CFfa23</a><br/>
         Airdrop Distributor: <a href="https://explorer-mainnet.maticvigil.com/address/0x3BDeAe3A0DB5db37f260FeD77438Af91729573B2/transactions">0x3BDeAe3A0DB5db37f260FeD77438Af91729573B2</a><br/>
         Marketing Wallet: <a href="https://explorer-mainnet.maticvigil.com/address/0x4A170561126a1D765A6B80a081dB639945a8b53b/transactions">0x4A170561126a1D765A6B80a081dB639945a8b53b</a><br/>
         Dev Wallet: <a href="https://explorer-mainnet.maticvigil.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/>
