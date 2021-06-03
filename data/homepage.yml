@@ -1,19 +1,14 @@
 ---
 banner:
-  title: Deflationary. <a href="#community-launch">Community-Launched</a>.
-   Polygon Meme Token.
+  title: A <a href="#community-launch">Community</a> Token on Polygon.
 about:
   enable: true
-  content: "KogeCoin is a deflationary token for the nascent QuickSwap + Polygon community.
-    Anyone who's made a transaction on Quickswap before May 3, 2021 5PM UTC is eligible for a Genesis airdrop that
-    is equal to 96% of the total initial supply. This airdrop will end around June 3, 2021 (block number 1622763836).\n\n
-    Too often, \"fair launched\" meme tokens get sniped by bots who then dump on the rest of us. By airdropping to everyone, KogeCoin avoids this problem and allows the average user to benefit from a launch. Our goal is to make the Polygon community a nicer place to be.
-    \n\nThe devs are fully committed to KogeCoin and the Polygon/Matic defi space. Holders of KogeCoin will benefit from [KogeFarm.io](https://kogefarm.io/), an auto-compounding utility we built for defi users. Many airdropped tokens end up having lasting value due to their attachment to the community. We view KogeCoin as a token that allows us to grow with the community.
-    \n\n
-    Similar to other deflationary tokens, transactions will carry a 2% fee, about half of which will be burned and another half distributed to all holders. It is always better to claim early to start collecting the transaction fees. Another benefit of holding is that all tokens that were allocated to the initial airdrop but went unclaimed for 1 month following Genesis, along with any transaction fees they accumulated, will be redistributed to existing token holders in a second airdrop which may be in the form of staking at [KogeFarm.io](https://kogefarm.io/).
+  content: "KogeCoin's goal is to become a store of value for the Polygon community. It is a deflationary token that launched via airdrop to all early QuickSwap users. Too often, \"fair launched\" tokens get sniped by bots who then dumps on the rest of us. KogeCoin avoided this problem and built up an early group of dedicated HODLers.
+    \n\n If you missed out on our genesis airdrop, don't fret! About 90% of the tokens allocated for the airdrop were unclaimed and will be distributed to holders of KogeCoin via staking at [KogeFarm.io](https://kogefarm.io/) after June 10. If you [buy](/howtobuy) some KogeCoins now, you will be able to get more through staking.\n\n
+    \n\nThe devs are fully committed to KogeCoin and the Polygon/Matic defi space. Holders of KogeCoin will benefit from the fees generated at [KogeFarm.io](https://kogefarm.io/), an auto-compounding utility we built for defi users. We view KogeCoin as a token that allows us to grow with the community, and expect to both grow KogeFarm and build other utilities for holders in the future.
     "
   button:
-    enable: yes
+    enable: false
     label: Claim Genesis Airdrop
     URL: claimgenesis
 skill:
@@ -23,8 +18,8 @@ skill:
     - title: Genesis Airdrop - to All QuickSwap Users
       progress: 96%
       color: '#fdb157'
-    - title: HODLers' Airdrop - to All Holders 1 Month After
-      progress: TBD
+    - title: HODLers' Staking - unclaimed tokens
+      progress: 90%
       color: '#9473e6'
     - title: Marketing - Community Directed
       progress: 2%
@@ -38,13 +33,13 @@ education:
   enable: true
   title: Road Map
   item:
-    - title: Genesis Airdrop + HODLers' Airdrop
+    - title: Genesis Airdrop + HODLers' Staking
       year: May-June 2021
       academy: ''
     - title: LP Farming Tool + Farming Partnerships
       year: May-June 2021
       academy: ''
-    - title: Youtube/Tiktok Ads + Meme Contests
+    - title: Meme Contests + Advertising
       year: May-June 2021
       academy: ''
     - title: NFTs, Defi Integrations, Exchange Listings, and More!

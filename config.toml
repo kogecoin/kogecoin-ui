@@ -40,10 +40,10 @@ URL = "howtobuy"
 name = "How to Buy"
 weight = 2
 
-[[menu.main]]
-URL = "claimgenesis"
-name = "Claim Genesis Airdrop"
-weight = 3
+# [[menu.main]]
+# URL = "claimgenesis"
+# name = "Claim Genesis Airdrop"
+# weight = 3
 
 [[menu.main]]
 URL = "https://kogefarm.io"
