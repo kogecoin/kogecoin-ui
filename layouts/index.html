@@ -125,8 +125,8 @@
         <div class="col-lg-3 col-md-4 text-center">
           <img src="images/experience/icon-2.png" alt="icon">
           <p class="mb-0"></p>
-          <h4>Transaction Fee</h4>
-          <h6 class="text-light">0%</h6>
+          <h4>Tokens Burned</h4>
+          <h6 class="text-light"><span class="showSupplyBurned">Loading</span></h6>
         </div>
       </div>
     </div>
@@ -364,6 +364,7 @@
     const showQuickSwapPrice = document.querySelector('.showQuickSwapPrice');
     const showMarketCap = document.querySelector('.showMarketCap');
     const showCMarketCap = document.querySelector('.showCMarketCap');
+    const showSupplyBurned = document.querySelector('.showSupplyBurned');
 
     function numberWithCommas(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -374,6 +375,7 @@
       const totalSupply = await contract.methods.totalSupply.call().call();
       showTotalSupply.innerHTML = numberWithCommas(~~(totalSupply/1000000000));
       const totalFees = await contract.methods.totalFees.call().call();
+      showSupplyBurned.innerHTML = numberWithCommas(~~(totalFees/1000000000));
       showCurrentSupply.innerHTML = numberWithCommas(~~((totalSupply-totalFees)/1000000000));
       const QuickSwapAmt = await QuickSwapContract.methods.getAmountsOut(100000,["0x2791bca1f2de4661ed88a30c99a7a9449aa84174","0x13748d548D95D78a3c83fe3F32604B4796CFfa23"]).call();
       showQuickSwapPrice.innerHTML = '$' + Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*1000000)/1000000;
