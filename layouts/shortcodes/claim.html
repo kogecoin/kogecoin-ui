@@ -61,7 +61,7 @@ jQuery.getJSON('../data/merkle_output.txt', function(data) {
       })
       .on('transactionHash', function(hash){
         setClaimText('Claiming...')
-        console.log("Approval transaction created = https://explorer-mainnet.maticvigil.com/tx/" + hash);
+        console.log("Approval transaction created = https://polygonscan.com/tx/" + hash);
       })
       .on('receipt', async function(receipt){
           checkClaim();
