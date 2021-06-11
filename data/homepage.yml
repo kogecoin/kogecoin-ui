@@ -3,8 +3,8 @@ banner:
   title: A <a href="#community-launch">Community</a> Token on Polygon.
 about:
   enable: true
-  content: "KogeCoin's goal is to become a store of value for the Polygon community. It is a deflationary token that launched via airdrop to all early QuickSwap users. Too often, \"fair launched\" tokens get sniped by bots who then dumps on the rest of us. KogeCoin avoided this problem and built up an early group of dedicated HODLers.
-    \n\n If you missed out on our genesis airdrop, don't fret! About 90% of the tokens allocated for the airdrop were unclaimed and will be distributed to holders of KogeCoin via staking at [KogeFarm.io](https://kogefarm.io/) after June 10. If you [buy](/howtobuy) some KogeCoins now, you will be able to get more through staking.\n\n
+  content: "KogeCoin's goal is to become a store of value for the Polygon community. It is a deflationary token that launched via airdrop to all early QuickSwap users who had around 4 weeks to claim. Too often, \"fair launched\" tokens get sniped by bots who then dump on the rest of us. KogeCoin avoided this problem and built up an early group of dedicated HODLers.
+    \n\n If you missed out on our genesis airdrop, don't fret! About 90% of the tokens allocated for the airdrop were unclaimed and will be distributed to holders of KogeCoin via staking at [KogeFarm.io/farms](https://kogefarm.io/farms), with rewards starting after June 10. If you [buy](/howtobuy) some KogeCoins now, you can get more through staking.\n\n
     \n\nThe devs are fully committed to KogeCoin and the Polygon/Matic defi space. Holders of KogeCoin will benefit from the fees generated at [KogeFarm.io](https://kogefarm.io/), an auto-compounding utility we built for defi users. We view KogeCoin as a token that allows us to grow with the community, and expect to both grow KogeFarm and build other utilities for holders in the future.
     "
   button:
