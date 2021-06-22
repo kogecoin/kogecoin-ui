@@ -3,8 +3,8 @@ banner:
   title: A <a href="#community-launch">Community</a> Token on Polygon.
 about:
   enable: true
-  content: "KogeCoin's goal is to become a store of value for the Polygon community. It is a deflationary token that launched via airdrop to all early QuickSwap users. Too often, \"fair launched\" tokens get sniped by bots who then dumps on the rest of us. KogeCoin avoided this problem and built up an early group of dedicated HODLers.
-    \n\n If you missed out on our genesis airdrop, don't fret! About 90% of the tokens allocated for the airdrop were unclaimed and will be distributed to holders of KogeCoin via staking at [KogeFarm.io](https://kogefarm.io/) after June 10. If you [buy](/howtobuy) some KogeCoins now, you will be able to get more through staking.\n\n
+  content: "KogeCoin's goal is to become a store of value for the Polygon community. It is a deflationary token that launched via airdrop to all early QuickSwap users who had around 4 weeks to claim. Too often, \"fair launched\" tokens get sniped by bots who then dump on the rest of us. KogeCoin avoided this problem and built up a strong community of dedicated HODLers.
+    \n\n If you missed out on our genesis airdrop, don't fret! About 90% of the tokens allocated for the airdrop were unclaimed and will be distributed to holders of KogeCoin via staking at [KogeFarm.io/farms](https://kogefarm.io/farms), with rewards starting after June 10. If you [buy](/howtobuy) some KogeCoins now, you can get more through staking.\n\n
     \n\nThe devs are fully committed to KogeCoin and the Polygon/Matic defi space. Holders of KogeCoin will benefit from the fees generated at [KogeFarm.io](https://kogefarm.io/), an auto-compounding utility we built for defi users. We view KogeCoin as a token that allows us to grow with the community, and expect to both grow KogeFarm and build other utilities for holders in the future.
     "
   button:
@@ -79,10 +79,11 @@ testimonial:
       image: ''
       designation: ''
       content: 'KOGECOIN Token: <a href="https://polygonscan.com/address/0x13748d548D95D78a3c83fe3F32604B4796CFfa23/transactions">0x13748d548D95D78a3c83fe3F32604B4796CFfa23</a><br/>
-      Airdrop Distributor: <a href="https://polygonscan.com/address/0x3BDeAe3A0DB5db37f260FeD77438Af91729573B2/transactions">0x3BDeAe3A0DB5db37f260FeD77438Af91729573B2</a><br/>
-      Marketing Wallet: <a href="https://polygonscan.com/address/0x4A170561126a1D765A6B80a081dB639945a8b53b/transactions">0x4A170561126a1D765A6B80a081dB639945a8b53b</a><br/>
-      Dev Wallet: <a href="https://polygonscan.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/>
-      Github: https://github.com/kogecoin/contracts'
+        KogeFarm Dev Wallet (USDC balance = to be used for burning): <a href="https://polygonscan.com/address/0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF/transactions">0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF</a><br/>
+        Marketing Wallet: <a href="https://polygonscan.com/address/0x4A170561126a1D765A6B80a081dB639945a8b53b/transactions">0x4A170561126a1D765A6B80a081dB639945a8b53b</a><br/>
+        Dev Wallet: <a href="https://polygonscan.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/>
+        Github: https://github.com/kogecoin/'
+
 clients_logo_slider:
   enable: false
   item:
