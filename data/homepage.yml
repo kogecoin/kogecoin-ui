@@ -83,6 +83,7 @@ testimonial:
         Marketing Wallet: <a href="https://polygonscan.com/address/0x4A170561126a1D765A6B80a081dB639945a8b53b/transactions">0x4A170561126a1D765A6B80a081dB639945a8b53b</a><br/>
         Dev Wallet: <a href="https://polygonscan.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/>
         Github: https://github.com/kogecoin/'
+
 clients_logo_slider:
   enable: false
   item:
