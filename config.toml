@@ -50,6 +50,12 @@ URL = "https://kogefarm.io"
 name = "KogeFarm"
 weight = 4
 
+[[menu.main]]
+URL = "https://vote.kogecoin.io"
+# URL = "https://snapshot.js/#/kogecoin.eth"
+name = "Governance"
+weight = 5
+
 
 
 # default parameters
@@ -68,7 +74,7 @@ description = "KogeCoin is a deflationary meme token built for the QuickSwap Com
 # google analitycs
 google_analitycs_id = "Your ID"
 # copyright
-copyright = "Made with Love for the QuickSwap + Polygon Community"
+copyright = "💜 Made with Love for the QuickSwap + Polygon Community 💜"
 twitter = "https://twitter.com/kogecoin"
 telegram = "https://t.me/kogecoin"
 medium = "https://medium.com/@kogecoin"

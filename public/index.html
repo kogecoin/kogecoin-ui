@@ -70,6 +70,12 @@
         </li>
         
         
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://vote.kogecoin.io">Governance</a>
+        </li>
+        
+        
       </ul>
     </div>
   </nav>
@@ -110,8 +116,8 @@
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
           
-          <p class="font-secondary lead text-dark"><p>KogeCoin&rsquo;s goal is to become a store of value for the Polygon community. It is a deflationary token that launched via airdrop to all early QuickSwap users. Too often, &ldquo;fair launched&rdquo; tokens get sniped by bots who then dumps on the rest of us. KogeCoin avoided this problem and built up an early group of dedicated HODLers.</p>
-<p>If you missed out on our genesis airdrop, don&rsquo;t fret! About 90% of the tokens allocated for the airdrop were unclaimed and will be distributed to holders of KogeCoin via staking at <a href="https://kogefarm.io/">KogeFarm.io</a> after June 10. If you <a href="/howtobuy">buy</a> some KogeCoins now, you will be able to get more through staking.</p>
+          <p class="font-secondary lead text-dark"><p>KogeCoin&rsquo;s goal is to become a store of value for the Polygon community. It is a deflationary token that launched via airdrop to all early QuickSwap users who had around 4 weeks to claim. Too often, &ldquo;fair launched&rdquo; tokens get sniped by bots who then dump on the rest of us. KogeCoin avoided this problem and built up a strong community of dedicated HODLers.</p>
+<p>If you missed out on our genesis airdrop, don&rsquo;t fret! About 90% of the tokens allocated for the airdrop were unclaimed and will be distributed to holders of KogeCoin via staking at <a href="https://kogefarm.io/farms">KogeFarm.io/farms</a>, with rewards starting after June 10. If you <a href="/howtobuy">buy</a> some KogeCoins now, you can get more through staking.</p>
 <p>The devs are fully committed to KogeCoin and the Polygon/Matic defi space. Holders of KogeCoin will benefit from the fees generated at <a href="https://kogefarm.io/">KogeFarm.io</a>, an auto-compounding utility we built for defi users. We view KogeCoin as a token that allows us to grow with the community, and expect to both grow KogeFarm and build other utilities for holders in the future.</p>
 </p>
           
@@ -229,7 +235,7 @@
         </div>
         <div class="col-lg-3 col-md-4 text-center">
           <p class="mb-0"></p>
-          <h4>Market Cap</h4>
+          <h4>Fully Diluted Market Cap</h4>
           <h5><span class="showMarketCap">Loading</span></h5>
         </div>
         <div class="col-lg-3 col-md-4 text-center">
@@ -240,7 +246,7 @@
         <div class="col-lg-12 text-center">
           <br/>
           <br/>
-          <h6 class="text-light">*If you'd like to supply liquidity and earn trade fees, our main trading pair on QuickSwap is KOGECOIN-MATIC. After June 10, liquidity providers will be able to stake their LP tokens to earn additional rewards.</h6>
+          <h6 class="text-light">*If you'd like to supply liquidity and earn trade fees, our main trading pair on QuickSwap is KOGECOIN-MATIC. Liquidity providers are able to stake their LP tokens at <a href="https://kogefarm.io/farms">KogeFarm.io/farms</a> to earn additional rewards after June 10.</h6>
         </div>
       </div>
     </div>
@@ -341,7 +347,7 @@
           
           <div class="text-left">
 
-            <p class="mb-4">KOGECOIN Token: <a href="https://polygonscan.com/address/0x13748d548D95D78a3c83fe3F32604B4796CFfa23/transactions">0x13748d548D95D78a3c83fe3F32604B4796CFfa23</a><br/> Airdrop Distributor: <a href="https://polygonscan.com/address/0x3BDeAe3A0DB5db37f260FeD77438Af91729573B2/transactions">0x3BDeAe3A0DB5db37f260FeD77438Af91729573B2</a><br/> Marketing Wallet: <a href="https://polygonscan.com/address/0x4A170561126a1D765A6B80a081dB639945a8b53b/transactions">0x4A170561126a1D765A6B80a081dB639945a8b53b</a><br/> Dev Wallet: <a href="https://polygonscan.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/> Github: <a href="https://github.com/kogecoin/contracts">https://github.com/kogecoin/contracts</a></p>
+            <p class="mb-4">KOGECOIN Token: <a href="https://polygonscan.com/address/0x13748d548D95D78a3c83fe3F32604B4796CFfa23/transactions">0x13748d548D95D78a3c83fe3F32604B4796CFfa23</a><br/> KogeFarm Dev Wallet (USDC balance = to be used for burning): <a href="https://polygonscan.com/address/0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF/transactions">0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF</a><br/> Marketing Wallet: <a href="https://polygonscan.com/address/0x4A170561126a1D765A6B80a081dB639945a8b53b/transactions">0x4A170561126a1D765A6B80a081dB639945a8b53b</a><br/> Dev Wallet: <a href="https://polygonscan.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/> Github: <a href="https://github.com/kogecoin/">https://github.com/kogecoin/</a></p>
 
 
 
@@ -400,10 +406,13 @@
       }
     ];
 
+    const fundABI = [{"inputs":[],"name":"balance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"}];
+
     const abiQuickSwap = [{"type":"function","stateMutability":"view","outputs":[{"type":"uint256[]","name":"amounts","internalType":"uint256[]"}],"name":"getAmountsIn","inputs":[{"type":"uint256","name":"amountOut","internalType":"uint256"},{"type":"address[]","name":"path","internalType":"address[]"}]},{"type":"function","stateMutability":"view","outputs":[{"type":"uint256[]","name":"amounts","internalType":"uint256[]"}],"name":"getAmountsOut","inputs":[{"type":"uint256","name":"amountIn","internalType":"uint256"},{"type":"address[]","name":"path","internalType":"address[]"}]}]
 
     var contract = new web3.eth.Contract(abi,"0x13748d548D95D78a3c83fe3F32604B4796CFfa23");
     var QuickSwapContract = new web3.eth.Contract(abiQuickSwap,"0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff");
+    var FundContract = new web3.eth.Contract(fundABI,"0x6A82FdE3033a969cf1ECe48D76aA942E9Fc567Db");
 
     const showTotalSupply = document.querySelector('.showTotalSupply');
     const showCurrentSupply = document.querySelector('.showCurrentSupply');
@@ -417,16 +426,16 @@
     }
 
    const getSupply = async function(){
-      const airdropWallet = 45101793717574955;
       const totalSupply = await contract.methods.totalSupply.call().call();
       showTotalSupply.innerHTML = numberWithCommas(~~(totalSupply/1000000000));
       const totalFees = await contract.methods.totalFees.call().call();
       showSupplyBurned.innerHTML = numberWithCommas(~~(totalFees/1000000000));
       showCurrentSupply.innerHTML = numberWithCommas(~~((totalSupply-totalFees)/1000000000));
       const QuickSwapAmt = await QuickSwapContract.methods.getAmountsOut(100000,["0x2791bca1f2de4661ed88a30c99a7a9449aa84174","0x13748d548D95D78a3c83fe3F32604B4796CFfa23"]).call();
+      const FundAmt = await FundContract.methods.balance.call().call();
       showQuickSwapPrice.innerHTML = '$' + Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*1000000)/1000000;
       showMarketCap.innerHTML = '$' + numberWithCommas(Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*(totalSupply-totalFees)/1000000000));
-      showCMarketCap.innerHTML = '$' + numberWithCommas(Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*(totalSupply-totalFees-airdropWallet)/1000000000));
+      showCMarketCap.innerHTML = '$' + numberWithCommas(Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*(totalSupply-totalFees-FundAmt)/1000000000));
     }
 
     getSupply();
