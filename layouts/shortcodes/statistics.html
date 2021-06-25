@@ -41,7 +41,8 @@
  const getSupply = async function(){
     const totalSupply = await contract.methods.totalSupply.call().call();
     showTotalSuply.innerHTML = ~~(totalSupply/1000000000);
-    const totalFees = await contract.methods.totalFees.call().call();
+    let totalFees = await contract.methods.totalFees.call().call();
+    totalFees = totalFees + 44321808446589
     showCurrentSupply.innerHTML = ~~((totalSupply-totalFees)/1000000000);
   }
 
