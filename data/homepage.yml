@@ -3,7 +3,8 @@ banner:
   title: A <a href="#community-launch">Community</a> Token on Polygon.
 about:
   enable: true
-  content: "KogeCoin's goal is to become a store of value for the Polygon community. It is a deflationary token that launched via airdrop to all early QuickSwap users who had around 4 weeks to claim. Too often, \"fair launched\" tokens get sniped by bots who then dump on the rest of us. KogeCoin avoided this problem and built up a strong community of dedicated HODLers.
+  content:
+    "KogeCoin's goal is to become a store of value for the Polygon community. It is a deflationary token that launched via airdrop to all early QuickSwap users who had around 4 weeks to claim. Too often, \"fair launched\" tokens get sniped by bots who then dump on the rest of us. KogeCoin avoided this problem and built up a strong community of dedicated HODLers.
     \n\n If you missed out on our genesis airdrop, don't fret! About 90% of the tokens allocated for the airdrop were unclaimed and will be distributed to holders of KogeCoin via staking at [KogeFarm.io/farms](https://kogefarm.io/farms), with rewards starting after June 10. If you [buy](/howtobuy) some KogeCoins now, you can get more through staking.\n\n
     \n\nThe devs are fully committed to KogeCoin and the Polygon/Matic defi space. Holders of KogeCoin will benefit from the fees generated at [KogeFarm.io](https://kogefarm.io/), an auto-compounding utility we built for defi users. We view KogeCoin as a token that allows us to grow with the community, and expect to both grow KogeFarm and build other utilities for holders in the future.
     "
@@ -68,29 +69,19 @@ service:
         tempor incididunt ut labore et dolore magna aliqua.
       highlighted: false
 portfolio:
-  enable: false
+  enabled: false
   title: Portfolio
   item_show: '5'
 testimonial:
-  enable: true
+  enable1: true
   title: Contract Addresses
-  item:
+  item1:
     - name: ''
       image: ''
       designation: ''
-      content: 'KOGECOIN Token: <a href="https://polygonscan.com/address/0x13748d548D95D78a3c83fe3F32604B4796CFfa23/transactions">0x13748d548D95D78a3c83fe3F32604B4796CFfa23</a><br/>
-<<<<<<< HEAD
-        Marketing Wallet: <a href="https://polygonscan.com/address/0x4A170561126a1D765A6B80a081dB639945a8b53b/transactions">0x4A170561126a1D765A6B80a081dB639945a8b53b</a><br/>
-        Dev Wallet: <a href="https://polygonscan.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/>
-        Github: https://github.com/kogecoin/'
-=======
-        KogeFarm Dev Wallet (USDC balance = to be used for burning): <a href="https://polygonscan.com/address/0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF/transactions">0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF</a><br/>
-        Dev Wallet: <a href="https://polygonscan.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/>
-        Marketing Wallet: <a href="https://polygonscan.com/address/0x4A170561126a1D765A6B80a081dB639945a8b53b/transactions">0x4A170561126a1D765A6B80a081dB639945a8b53b</a><br/>
-        Github: https://github.com/kogecoin/'
-
->>>>>>> b7778bb8d8af63491ce4f82916ae467b42e024e8
-clients_logo_slider:
+      content:
+       'KOGECOIN Token: <a href="https://polygonscan.com/address/0x13748d548D95D78a3c83fe3F32604B4796CFfa23/transactions">0x13748d548D95D78a3c83fe3F32604B4796CFfa23</a><br/>KogeFarm Dev Wallet (USDC balance = to be used for burning): <a href="https://polygonscan.com/address/0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF/transactions">0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF</a><br/>Dev Wallet: <a href="https://polygonscan.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/>Marketing Wallet: <a href="https://polygonscan.com/address/0x4A170561126a1D765A6B80a081dB639945a8b53b/transactions">0x4A170561126a1D765A6B80a081dB639945a8b53b</a><br/>Github: <a href="https://github.com/kogecoin/">KogeCoin Github</a>'
+  clients_logo_slider:
   enable: false
   item:
     - logo: images/clients-logo/client-logo-1.png

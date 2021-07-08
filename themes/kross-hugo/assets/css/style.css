@@ -1,7 +1,7 @@
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
 PROJECT: Project Name
-VERSION: Versoin Number
+VERSION: Version Number
 -------------------------------------------------------------------*/
 @import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
 
@@ -23,7 +23,7 @@ body {
 p {
   font-weight: 400;
   color: #4c4c4c;
-  font-size: 18px;
+  font-size: 1
   line-height: 1.8;
   font-family: roboto, sans-serif
 }
@@ -423,7 +423,8 @@ textarea.form-control {
 .navigation {
   padding: 40px 130px;
   transition: .3s ease;
-  background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0% 0% / 300% 300%;
+  /* background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0% 0% / 300% 300%; */
+  background: linear-gradient(90deg, hsla(293, 55%, 39%, 1) 0%, hsla(77, 100%, 54%, 1) 100%);
 }
 
 .navigation.nav-bg {
@@ -441,7 +442,8 @@ textarea.form-control {
   .navigation {
     padding: 20px;
     /* background: var(--primary-color); */
-    background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0% 0% / 300% 300%;
+    /* background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0% 0% / 300% 300%; */
+    background: linear-gradient(90deg, hsla(293, 55%, 39%, 1) 0%, hsla(77, 100%, 54%, 1) 100%);
   }
 }
 
@@ -876,3 +878,68 @@ blockquote {
 .filter-controls li.active {
   font-weight: 700
 }
+/* CSS HEX */
+/*
+#27272b #223 darkslategray hsl(240,4%,16%)rgb(39,39,43)
+--darkslategray #27272b;
+--purple: #73099aff;
+--dark-magenta: #7e2095ff;
+--dark-magenta-2: #8e2d9aff; ** Dark Magenta **
+--xiketic: #1c0d14ff;
+--green-lizard: #a6e800ff; ** GREEN LIZARD **
+--bitter-lime: #bcff14ff; */
+
+/* CSS HSL */
+/* --purple: hsla(284, 89%, 32%, 1);
+--dark-magenta: hsla(288, 65%, 35%, 1);
+--dark-magenta-2: hsla(293, 55%, 39%, 1);
+--xiketic: hsla(332, 37%, 8%, 1);
+--green-lizard: hsla(77, 100%, 45%, 1);
+--bitter-lime: hsla(77, 100%, 54%, 1); */
+
+/* SCSS HEX */
+/* $purple: #73099aff;
+$dark-magenta: #7e2095ff;
+$dark-magenta-2: #8e2d9aff;
+$xiketic: #1c0d14ff;
+$green-lizard: #a6e800ff;
+$bitter-lime: #bcff14ff; */
+
+/* SCSS HSL */
+/* $purple: hsla(284, 89%, 32%, 1);
+$dark-magenta: hsla(288, 65%, 35%, 1);
+$dark-magenta-2: hsla(293, 55%, 39%, 1);
+$xiketic: hsla(332, 37%, 8%, 1);
+$green-lizard: hsla(77, 100%, 45%, 1);
+$bitter-lime: hsla(77, 100%, 54%, 1); */
+
+/* SCSS RGB */
+/* $purple: rgba(115, 9, 154, 1);
+$dark-magenta: rgba(126, 32, 149, 1);
+$dark-magenta-2: rgba(142, 45, 154, 1);
+$xiketic: rgba(28, 13, 20, 1);
+$green-lizard: rgba(166, 232, 0, 1);
+$bitter-lime: rgba(188, 255, 20, 1); */
+
+/* SCSS Gradient */
+/* $gradient-top: linear-gradient(0deg, #73099aff, #7e2095ff, #8e2d9aff, #1c0d14ff, #a6e800ff, #bcff14ff);
+$gradient-right: linear-gradient(90deg, #73099aff, #7e2095ff, #8e2d9aff, #1c0d14ff, #a6e800ff, #bcff14ff);
+$gradient-bottom: linear-gradient(180deg, #73099aff, #7e2095ff, #8e2d9aff, #1c0d14ff, #a6e800ff, #bcff14ff);
+$gradient-left: linear-gradient(270deg, #73099aff, #7e2095ff, #8e2d9aff, #1c0d14ff, #a6e800ff, #bcff14ff);
+$gradient-top-right: linear-gradient(45deg, #73099aff, #7e2095ff, #8e2d9aff, #1c0d14ff, #a6e800ff, #bcff14ff);
+$gradient-bottom-right: linear-gradient(135deg, #73099aff, #7e2095ff, #8e2d9aff, #1c0d14ff, #a6e800ff, #bcff14ff);
+$gradient-top-left: linear-gradient(225deg, #73099aff, #7e2095ff, #8e2d9aff, #1c0d14ff, #a6e800ff, #bcff14ff);
+$gradient-bottom-left: linear-gradient(315deg, #73099aff, #7e2095ff, #8e2d9aff, #1c0d14ff, #a6e800ff, #bcff14ff);
+$gradient-radial: radial-gradient(#73099aff, #7e2095ff, #8e2d9aff, #1c0d14ff, #a6e800ff, #bcff14ff);  */
+
+
+/* Linear Gradient */
+/* background: hsla(293, 55%, 39%, 1);
+
+background: linear-gradient(90deg, hsla(293, 55%, 39%, 1) 0%, hsla(77, 100%, 54%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(293, 55%, 39%, 1) 0%, hsla(77, 100%, 54%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(293, 55%, 39%, 1) 0%, hsla(77, 100%, 54%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8E2D9A", endColorstr="#BCFF14", GradientType=1 ); */
