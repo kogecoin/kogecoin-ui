@@ -9,7 +9,7 @@ VERSION: Version Number
   font-family: bwnistaint-xbd;
   src: url(../fonts/BwNistaInt-xBd.woff) format("woff");
   font-style: normal;
-  font-display: swap
+  font-display: swap;
 }
 
 body {
@@ -17,15 +17,15 @@ body {
   font-family: roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
-  color: #4c4c4c
+  color: #4c4c4c;
 }
 
 p {
   font-weight: 400;
   color: #4c4c4c;
-  font-size: 1
+  font-size: 1;
   line-height: 1.8;
-  font-family: roboto, sans-serif
+  font-family: roboto, sans-serif;
 }
 
 h1,
@@ -36,7 +36,7 @@ h5,
 h6 {
   color: #000;
   font-family: playfair display, serif;
-  line-height: 1.2
+  line-height: 1.2;
 }
 
 h1,
