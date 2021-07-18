@@ -424,11 +424,11 @@ textarea.form-control {
   padding: 40px 130px;
   transition: .3s ease;
   /* background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0% 0% / 300% 300%; */
-  background: linear-gradient(90deg, hsla(293, 55%, 39%, 1) 0%, hsla(77, 100%, 54%, 1) 100%);
+  background-color: #000000;
 }
 
 .navigation.nav-bg {
-  background-color: var(--primary-color);
+  /* background-color: #000000, .8; */
   padding: 15px 100px;
 }
 
@@ -443,7 +443,8 @@ textarea.form-control {
     padding: 20px;
     /* background: var(--primary-color); */
     /* background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0% 0% / 300% 300%; */
-    background: linear-gradient(90deg, hsla(293, 55%, 39%, 1) 0%, hsla(77, 100%, 54%, 1) 100%);
+    /* background: linear-gradient(90deg, hsla(293, 55%, 39%, 1) 0%, hsla(77, 100%, 54%, 1) 100%); */
+    background: linear-gradient(90deg, '#000000' 0%, '#2FFF0C' 100%); 
   }
 }
 
