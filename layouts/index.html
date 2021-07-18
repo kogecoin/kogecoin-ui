@@ -378,7 +378,7 @@
       showTotalSupply.innerHTML = numberWithCommas(~~(totalSupply/1000000000));
       const totalFees = await contract.methods.totalFees.call().call();
       const FundAmt = await FundContract.methods.balance.call().call();
-      const totalBurned = 44321808446589;
+      const totalBurned = 44321808446589+70082695351557;
       showSupplyBurned.innerHTML = numberWithCommas(~~(totalFees/1000000000 + totalBurned/1000000000));
       showCurrentSupply.innerHTML = numberWithCommas(~~((totalSupply-totalFees-totalBurned-FundAmt)/1000000000));
       const QuickSwapAmt = await QuickSwapContract.methods.getAmountsOut(100000,["0x2791bca1f2de4661ed88a30c99a7a9449aa84174","0x13748d548D95D78a3c83fe3F32604B4796CFfa23"]).call();
