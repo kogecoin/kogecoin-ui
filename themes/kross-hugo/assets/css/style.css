@@ -51,7 +51,9 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000;
+  /* color: #000; */
+  /* color: #997300; */
+  color: #FFFFFF;
   /* font-family: playfair display, serif; */
   line-height: 1.2;
 }
@@ -185,7 +187,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  /* background-color: #fff; */
   z-index: 999999;
   display: flex;
   align-items: center;
@@ -206,14 +208,15 @@ img {
 a,
 a:hover,
 a:focus {
-  text-decoration: none
+  text-decoration: none;
 }
 
 a,
 button,
 select {
   cursor: pointer;
-  transition: .2s ease
+  transition: .2s ease;
+  color: #2FFF0A;
 }
 
 a:focus,
@@ -353,13 +356,13 @@ a:hover {
   overflow: hidden
 }
 
-.font-secondary {
+/* .font-secondary { */
   /* font-family: playfair display, serif !important */
-}
+/* } */
 
-.font-tertiary {
+/* .font-tertiary { */
   /* font-family: bwnistaint-xbd !important */
-}
+/* } */
 
 .shadow {
   box-shadow: 0 18px 39.1px 6.9px rgba(224, 241, 255, .34) !important
@@ -436,7 +439,8 @@ textarea.form-control {
 }
 
 .card-footer {
-  border: 0
+  border: 0;
+  /* background:rgba(0, 0, 0, .3) */
 }
 
 .navigation {
@@ -582,7 +586,8 @@ textarea.form-control {
 
 .wave::after {
   border-radius: 47%;
-  background-color: rgba(255, 255, 255, .9);
+  /* background-color: rgba(255, 255, 255, .9); */
+  background-color: rgba(0, 0, 0, .3);
   transform: translateX(-50%) rotate(0);
   animation: rotate 10s linear -5s infinite;
   z-index: 20
