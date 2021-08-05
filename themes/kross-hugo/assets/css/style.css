@@ -1,7 +1,7 @@
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
-PROJECT: Project Name
-VERSION: Version Number
+PROJECT: Kogecoin.io 
+VERSION: v2.0.0 
 -------------------------------------------------------------------*/
 @import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
 
@@ -206,12 +206,12 @@ select:focus {
 
 a.text-dark:hover {
 /*  color: var(--primary-color) !important */
-  color: #006fe6 !important
+  color: #2FFF0A !important
 }
 
 a:hover {
 /*  color: var(--primary-color) */
-  color: #006fe6
+  color: #2FFF0A
 }
 
 .slick-slide {
@@ -267,7 +267,8 @@ a:hover {
 }
 
 .text-primary {
-  color: var(--primary-color) !important
+  /* color: var(--primary-color) !important */
+  color: #FFFFFF !important
 }
 
 .text-color {
@@ -423,13 +424,13 @@ textarea.form-control {
 .navigation {
   padding: 40px 130px;
   transition: .3s ease;
-  background: rgba(0,0,0);
+  background:#25A244;;
   /* background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0% 0% / 300% 300%; */
 }
 
 .navigation.nav-bg {
   /* background-color: var(--primary-color); */
-  background-color:rgba(0, 0, 0, 0.9);
+  background: #25A244;
   padding: 15px 100px;
 }
 
@@ -442,7 +443,7 @@ textarea.form-control {
 @media(max-width:991px) {
   .navigation {
     padding: 20px;
-    background:rgba(0, 0, 0);
+    background: #25A244;
     /* background: var(--primary-color); */
     /* background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0% 0% / 300% 300%; */
   }
@@ -604,7 +605,8 @@ textarea.form-control {
 }
 
 .active-bg-primary * {
-  color: #fff
+  /* color: #fff */
+  color: #1D1D1D
 }
 
 .hover-shadow {

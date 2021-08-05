@@ -11,8 +11,9 @@
   <meta name="generator" content="Hugo 0.85.0" />
 
   <style>
+      
     :root{
-      --primary-color:#41228e;
+      --primary-color: #1C1C1C;
     }
     </style>
 
@@ -331,8 +332,38 @@
 
 
   
+  
+  
+  <section class="section bg-gray position-relative testimonial-bg-shapes">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title mb-5">Contract Addresses</h2>
+        </div>
+        <div class="col-lg-10">
+          
+          
+          <div class="text-left">
+
+            <p class="mb-4">KOGECOIN Token: <a href="https://polygonscan.com/address/0x13748d548D95D78a3c83fe3F32604B4796CFfa23/transactions">0x13748d548D95D78a3c83fe3F32604B4796CFfa23</a><br/> KogeFarm Dev Wallet (USDC balance = to be used for burning): <a href="https://polygonscan.com/address/0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF/transactions">0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF</a><br/> Dev Wallet: <a href="https://polygonscan.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/> Marketing Wallet: <a href="https://polygonscan.com/address/0x4A170561126a1D765A6B80a081dB639945a8b53b/transactions">0x4A170561126a1D765A6B80a081dB639945a8b53b</a><br/> Github: <a href="https://github.com/kogecoin/">https://github.com/kogecoin/</a></p>
 
 
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <img src="/images/backgrounds/map.png" alt="map" class="img-fluid bg-map">
+    <img src="/images/illustrations/dots-group-v.svg" alt="bg-shape" class="img-fluid bg-shape-1">
+
+    <img src="/images/illustrations/dots-group-sm.svg" alt="bg-shape" class="img-fluid bg-shape-3">
+
+
+  </section>
+  
+  
   
 
 
@@ -397,7 +428,11 @@
       showTotalSupply.innerHTML = numberWithCommas(~~(totalSupply/1000000000));
       const totalFees = await contract.methods.totalFees.call().call();
       const FundAmt = await FundContract.methods.balance.call().call();
+<<<<<<< HEAD
       const totalBurned = 44321808446589;
+=======
+      const totalBurned = 44321808446589+70082695351557;
+>>>>>>> c6bacfa09861186bc5035d09ed7dc53f3daf929a
       showSupplyBurned.innerHTML = numberWithCommas(~~(totalFees/1000000000 + totalBurned/1000000000));
       showCurrentSupply.innerHTML = numberWithCommas(~~((totalSupply-totalFees-totalBurned-FundAmt)/1000000000));
       const QuickSwapAmt = await QuickSwapContract.methods.getAmountsOut(100000,["0x2791bca1f2de4661ed88a30c99a7a9449aa84174","0x13748d548D95D78a3c83fe3F32604B4796CFfa23"]).call();
@@ -437,7 +472,7 @@
     </div>
   </div>
   <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">💜 Made with Love for the QuickSwap + Polygon Community 💜</p>
+    <p class="mb-0 text-light">💜 Best Auto-compounding Yield Optimizer on Polygon 💜</p>
   </div>
 </footer>
 
