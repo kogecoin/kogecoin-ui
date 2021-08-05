@@ -1,7 +1,12 @@
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
+<<<<<<< HEAD
+PROJECT: Project Name
+VERSION: Version Number
+=======
 PROJECT: Kogecoin.io 
 VERSION: v2.0.0 
+>>>>>>> c6bacfa09861186bc5035d09ed7dc53f3daf929a
 -------------------------------------------------------------------*/
 @import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
 
@@ -424,13 +429,13 @@ textarea.form-control {
 .navigation {
   padding: 40px 130px;
   transition: .3s ease;
-  background:#25A244;;
+  background:#1C1C1C;
   /* background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0% 0% / 300% 300%; */
 }
 
 .navigation.nav-bg {
   /* background-color: var(--primary-color); */
-  background: #25A244;
+  background: #1C1C1C;
   padding: 15px 100px;
 }
 
@@ -443,7 +448,7 @@ textarea.form-control {
 @media(max-width:991px) {
   .navigation {
     padding: 20px;
-    background: #25A244;
+    background: #1C1C1C;
     /* background: var(--primary-color); */
     /* background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0% 0% / 300% 300%; */
   }
