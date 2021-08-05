@@ -882,6 +882,12 @@ blockquote {
 .filter-controls li.active {
   font-weight: 700
 }
+
+html { font-family: "Inter", "system-ui"; }
+
+@supports (font-variation-settings: normal) {
+  html { font-family: "Inter var", "system-ui"; }
+}
 /* CSS HEX */
 /*
 #27272b #223 darkslategray hsl(240,4%,16%)rgb(39,39,43)
