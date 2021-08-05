@@ -2,7 +2,7 @@
 title: 'How to Buy'
 date: 2021-05-03T12:14:34
 description: 'Instructions on purchasing KogeCoin from QuickSwap.'
-author_image: 'images/about/koalaDark.jpg'
+# author_image: 'images/about/koalaDark.jpg'
 author_signature: ''
 ---
 
