@@ -1,7 +1,7 @@
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
-PROJECT: Project Name
-VERSION: Versoin Number
+PROJECT: Kogecoin.io 
+VERSION: v2.0.0 
 -------------------------------------------------------------------*/
 @import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
 
@@ -206,12 +206,12 @@ select:focus {
 
 a.text-dark:hover {
 /*  color: var(--primary-color) !important */
-  color: #006fe6 !important
+  color: #2FFF0A !important
 }
 
 a:hover {
 /*  color: var(--primary-color) */
-  color: #006fe6
+  color: #2FFF0A
 }
 
 .slick-slide {
@@ -267,7 +267,8 @@ a:hover {
 }
 
 .text-primary {
-  color: var(--primary-color) !important
+  /* color: var(--primary-color) !important */
+  color: #FFFFFF !important
 }
 
 .text-color {
@@ -604,7 +605,8 @@ textarea.form-control {
 }
 
 .active-bg-primary * {
-  color: #fff
+  /* color: #fff */
+  color: #1D1D1D
 }
 
 .hover-shadow {
