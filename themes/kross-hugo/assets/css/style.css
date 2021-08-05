@@ -1,12 +1,7 @@
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
-<<<<<<< HEAD
-PROJECT: Project Name
-VERSION: Version Number
-=======
 PROJECT: Kogecoin.io 
 VERSION: v2.0.0 
->>>>>>> c6bacfa09861186bc5035d09ed7dc53f3daf929a
 -------------------------------------------------------------------*/
 @import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
 
@@ -22,12 +17,12 @@ body {
   font-family: roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
-  color: #4c4c4c;
+  color: #FFFFFF;
 }
 
 p {
   font-weight: 400;
-  color: #4c4c4c;
+  color: #FFFFFF;
   font-size: 1;
   line-height: 1.8;
   font-family: roboto, sans-serif;
@@ -157,8 +152,9 @@ h6,
 }
 
 body {
-  background-color: #fff;
-  overflow-x: hidden
+  background-color: #1C1C1C;
+  overflow-x: hidden;
+  color: #FFFFFF;
 }
 
 ::selection {
@@ -277,11 +273,11 @@ a:hover {
 }
 
 .text-color {
-  color: #4c4c4c
+  color: #FFFFFF !important
 }
 
 .text-dark {
-  color: #000 !important
+  color: #FFFFFF !important
 }
 
 .text-light {
@@ -760,7 +756,7 @@ blockquote {
   font-family: playfair display, serif;
   font-size: 22px;
   font-weight: 400;
-  color: #000;
+  color: #FFFFFF;
   display: inherit;
   line-height: 1.5
 }
