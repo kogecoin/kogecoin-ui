@@ -1,4 +1,3 @@
-import "inter-ui/inter.css"
 (function ($) {
     'use strict';
 
