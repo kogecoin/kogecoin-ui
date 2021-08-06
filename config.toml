@@ -61,7 +61,7 @@ weight = 5
 # default parameters
 [params]
 home = "Home"
-logo = "images/logo.svg"
+logo = "images/logo.png"
 # theme color 41228e
 theme_color = "#41228e"
 # contact info
