@@ -15,11 +15,15 @@ VERSION: v2.0.0
 }
 
 @font-face {
- font-family: inter;
+ font-family: inter !important;
  src: url(../../../../node_modules/inter-ui/Inter\ \(web\)/Inter-Black.woff) format("woff"); 
  font-style: normal;
  font-weight: normal;
  font-display: swap;
+}
+
+.bg-black {
+  background:#252525;
 }
 /* 
 @font-face {
@@ -58,6 +62,9 @@ h6 {
   line-height: 1.2;
 }
 
+.card-title{
+  color: #FFFFFF !important;
+}
 h1,
 .h1 {
   font-size: 80px
@@ -92,7 +99,7 @@ h3,
 h4,
 .h4 {
   font-size: 22px;
-  color: #000000
+  color: #FFFFFF;
 }
 
 h5,
@@ -366,7 +373,7 @@ a:hover {
 /* } */
 
 .shadow {
-  box-shadow: 0 18px 39.1px 6.9px rgba(224, 241, 255, .34) !important
+  box-shadow: 0 9px 20px 7px rgba(224, 241, 255, .34) !important
 }
 
 .bg-dark {
@@ -385,7 +392,7 @@ a:hover {
 }
 
 .icon-light {
-  color: #c8d5ef
+  color: #252525;
 }
 
 .slick-dots {
