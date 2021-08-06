@@ -487,6 +487,10 @@ textarea.form-control {
   color: #fff
 }
 
+.dark-h4 {
+  color: black;
+}
+
 .hero-area {
   padding: 250px 0 200px;
   position: relative
