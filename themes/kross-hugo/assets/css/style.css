@@ -16,7 +16,7 @@ VERSION: v2.0.0
 
 @font-face {
  font-family: inter !important;
- src: url(../../../../node_modules/inter-ui/Inter\ \(web\)/Inter-Black.woff) format("woff"); 
+ src: url(../../static/fonts/Inter-Black.woff) format("woff"); 
  font-style: normal;
  font-weight: normal;
  font-display: swap;
@@ -918,10 +918,10 @@ blockquote {
   font-weight: 700
 }
 
-html { font-family: "Inter", "system-ui"; }
+html { font-family: "Inter", "system-ui" !important; }
 
 @supports (font-variation-settings: normal) {
-  html { font-family: "Inter var", "system-ui"; }
+  html { font-family: "Inter var", "system-ui" !important; }
 }
 /* CSS HEX */
 /*
