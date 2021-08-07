@@ -1,0 +1,108 @@
+# default configuration
+baseURL = "https://kogecoin.io"
+languageCode = "en-us"
+summaryLength = "10"
+theme = "kross-hugo"
+title = "KogeCoin.io"
+
+# css plugins
+[[params.plugins.css]]
+URL = "plugins/bootstrap/bootstrap.min.css"
+
+[[params.plugins.css]]
+URL = "plugins/slick/slick.css"
+
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# js plugin
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js"
+
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js"
+
+[[params.plugins.js]]
+URL = "plugins/slick/slick.min.js"
+
+[[params.plugins.js]]
+URL = "plugins/shuffle/shuffle.min.js"
+
+
+# menu
+[[menu.main]]
+URL = "howtobuy"
+name = "How to Buy"
+weight = 2
+
+# [[menu.main]]
+# URL = "claimgenesis"
+# name = "Claim Genesis Airdrop"
+# weight = 3
+
+[[menu.main]]
+URL = "https://kogefarm.io"
+name = "KogeFarm"
+weight = 4
+
+[[menu.main]]
+URL = "https://vote.kogecoin.io"
+# URL = "https://snapshot.js/#/kogecoin.eth"
+name = "Governance"
+weight = 5
+
+
+
+# default parameters
+[params]
+home = "Home"
+logo = "images/logo.png"
+# theme color 41228e
+theme_color = "#41228e"
+# contact info
+phone = ""
+email = ""
+address = ""
+# meta description
+author = "The Community"
+description = "KogeCoin is a deflationary meme token built for the QuickSwap Community on Polygon/Matic."
+# google analitycs
+google_analitycs_id = "Your ID"
+# copyright
+copyright = "💜 Best Auto-compounding Yield Optimizer on Polygon 💜"
+twitter = "https://twitter.com/kogecoin"
+telegram = "https://t.me/kogecoin"
+medium = "https://medium.com/@kogecoin"
+
+
+# contact
+[params.contact]
+enable = false
+form_action = "#" # contact form works with : https://formspree.io
+
+# preloader
+[params.preloader]
+enable = true
+preloader = "" # use png, jpg, svg or gif format
+
+# social site
+[[params.social]]
+URL = "#"
+icon = "ti-facebook"
+
+[[params.social]]
+URL = "#"
+icon = "ti-instagram"
+
+[[params.social]]
+URL = "#"
+icon = "ti-dribbble"
+
+[[params.social]]
+URL = "https://twitter.com/kogecoin"
+icon = "ti-twitter-alt"
