@@ -33,6 +33,10 @@ URL = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
 URL = "plugins/shuffle/shuffle.min.js"
 
+[[menu.main]]
+URL = "https://medium.com/kogecoin"
+name = "Blog"
+weight = 1
 
 # menu
 [[menu.main]]
@@ -92,17 +96,25 @@ preloader = "" # use png, jpg, svg or gif format
 
 # social site
 [[params.social]]
-URL = "#"
-icon = "ti-facebook"
-
-[[params.social]]
-URL = "#"
-icon = "ti-instagram"
-
-[[params.social]]
-URL = "#"
-icon = "ti-dribbble"
-
-[[params.social]]
 URL = "https://twitter.com/kogecoin"
-icon = "ti-twitter-alt"
+icon = "twitter-alt"
+
+[[params.social]]
+URL = "https://github.com/kogecoin"
+icon = "ti-github-alt"
+
+[[params.social]]
+URL = "https://t.me/kogecoin"
+icon = "ti-telegram-alt"
+
+[[params.social]]
+URL = "https://medium.com/kogecoin"
+icon = "ti-medium-alt"
+
+[[parmas.social]]
+URL = "https://discord.gg/xDsnS3TSVA"
+icon = "ti-discord-alt"
+
+[[params.social]]
+URL = "https://www.reddit.com/r/kogecoin"
+icon = "ti-reddit-alt"
