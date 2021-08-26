@@ -51,7 +51,7 @@ From Binance Smart Chain:
 Using Evodefi Bridge:
 <ul>
 <li>
-We are excited to announce that you can now directly swap BSC tokens for KogeCoin on the Polygon network through the <a href="https://bridge.evodefi.com/exchange?from=bsc&to=polygon&in=0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d&out=0x13748d548D95D78a3c83fe3F32604B4796CFfa23">Evodefi Bridge</a>
+We are excited to announce that you can now directly swap BSC tokens for KogeCoin on the Polygon network through the <a href="https://bridge.evodefi.com/exchange?from=bsc&to=polygon&in=0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d&out=0x13748d548D95D78a3c83fe3F32604B4796CFfa23">Evodefi Bridge</a>.
 You no longer have to go searching for a BSC —> Polygon bridge, bridge a token, and then swap that token for KogeCoin in a separate transaction.
 <li>
 Instead, using the Evodefi bridge, connect your BSC and Polygon wallets, provide the token you'd like to swap for KogeCoin on BSC, choose KOGE on the Polygon network, and you're done!
