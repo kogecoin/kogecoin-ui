@@ -60,6 +60,34 @@ URL = "https://vote.kogecoin.io"
 name = "Governance"
 weight = 5
 
+[[menu.main]]
+URL = "/polyroll"
+name = "Games @ PolyRoll"
+weight = 6
+
+[[menu.main]]
+URL = "https://polyroll.org/coinflip/KOGE?ref=0k4N170561126n1Q765N6O80n081qO639945n8o53o"
+name = "CoinFlip"
+weight = 1
+parent = "Games @ PolyRoll"
+
+[[menu.main]]
+URL = "https://polyroll.org/diceroll/KOGE?ref=0k4N170561126n1Q765N6O80n081qO639945n8o53o"
+name = "Dice Roll"
+weight = 1
+parent = "Games @ PolyRoll"
+
+[[menu.main]]
+URL = "https://polyroll.org/polyroll/KOGE?ref=0k4N170561126n1Q765N6O80n081qO639945n8o53o"
+name = "Polyroll"
+weight = 1
+parent = "Games @ PolyRoll"
+
+[[menu.main]]
+URL = "https://polyroll.org/roulette/KOGE?ref=0k4N170561126n1Q765N6O80n081qO639945n8o53o"
+name = "Roulette"
+weight = 1
+parent = "Games @ PolyRoll"
 
 
 # default parameters

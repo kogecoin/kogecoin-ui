@@ -512,6 +512,22 @@ textarea.form-control {
   color: #fff;
 }
 
+.dropdown {
+  color:#2fff0a;
+}
+
+.show {
+  color:#2fff0a
+}
+
+.dropdown-menu {
+  background-color:#252525;
+}
+
+.dropdown-item {
+  color:#2fff0a
+}
+
 .dark-h4 {
   color: black;
 }
