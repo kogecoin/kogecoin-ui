@@ -67,7 +67,7 @@ weight = 6
 
 [[menu.main]]
 URL = "https://polyroll.org/coinflip/KOGE?ref=0k4N170561126n1Q765N6O80n081qO639945n8o53o"
-name = "CoinFlip"
+name = "Coin Flip"
 weight = 1
 parent = "Games @ PolyRoll"
 

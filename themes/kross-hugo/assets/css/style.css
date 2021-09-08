@@ -524,7 +524,7 @@ textarea.form-control {
   background-color:#252525;
 }
 
-.dropdown-item {
+.dropdown-item:active!important{
   color:#2fff0a
 }
 
