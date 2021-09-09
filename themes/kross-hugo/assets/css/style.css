@@ -524,8 +524,15 @@ textarea.form-control {
   background-color:#252525;
 }
 
-.dropdown-item:active!important{
-  color:#2fff0a
+.dropdown-item:hover{
+  color:#2fff0a!important;
+}
+
+
+.dropdown-item {
+  background-color: #181818!important;
+  border-bottom:rgba(224, 241, 255, 0.34);
+  border-width: .5px;
 }
 
 .dark-h4 {
