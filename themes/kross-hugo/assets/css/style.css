@@ -533,6 +533,7 @@ textarea.form-control {
   background-color: #181818!important;
   border-bottom:rgba(224, 241, 255, 0.34);
   border-width: .5px;
+  color: white!important;
 }
 
 .dark-h4 {
