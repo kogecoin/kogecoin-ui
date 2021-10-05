@@ -102,11 +102,11 @@ email = ""
 address = ""
 # meta description
 author = "The Community"
-description = "KogeCoin is a deflationary meme token built for the QuickSwap Community on Polygon/Matic."
+description = "KogeCoin is a deflationary native token of the KogeFarm yield aggreator service."
 # google analitycs
 google_analitycs_id = "Your ID"
 # copyright
-copyright = "💜 Best Auto-compounding Yield Optimizer on Polygon 💜"
+copyright = "Perfomance. Community. Security. Pure Koge."
 twitter = "https://twitter.com/kogecoin"
 telegram = "https://t.me/kogecoin"
 medium = "https://medium.com/@kogecoin"
