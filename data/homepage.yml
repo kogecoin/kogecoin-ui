@@ -31,7 +31,7 @@ skill:
 experience:
   enable: true
 education:
-  enable: true
+  enable: false
   title: Road Map
   item:
     - title: Genesis Airdrop + HODLers' Staking
