@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/claimgenesis/</loc>
+    <loc>https://kogecoin.io/claimgenesis/</loc>
     <lastmod>2021-05-03T12:14:34+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/howtobuy/</loc>
+    <loc>https://kogecoin.io/howtobuy/</loc>
     <lastmod>2021-05-03T12:14:34+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://kogecoin.io/</loc>
     <lastmod>2021-05-03T12:14:34+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://kogecoin.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://kogecoin.io/tags/</loc>
   </url>
 </urlset>
