@@ -4,9 +4,8 @@ banner:
 about:
   enable: true
   content:
-    "KogeCoin is a deflationary community token that launched via airdrop to all early QuickSwap users who had around 4 weeks to claim.
-    \n\nAll unclaimed KogeCoin tokens are being distributed to through our [farms](https://kogefarm.io/farms).\n\n
-    \n\nKogeCoin holders help govern [KogeFarm.io](https://kogefarm.io/), an auto-compounding utility built for DeFi users.
+    "KogeCoin is a deflationary community token that launched via airdrop to all early QuickSwap users on Polygon who had around 4 weeks to claim.
+    \n\nThe original KogeCoin team built [KogeFarm.io](https://kogefarm.io/), an auto-compounding utility built for DeFi users. The KogeCoin project has since been governed by a DAO, with other possible projects/initiatives proposed by community members.
     "
   button:
     enable: false
@@ -30,48 +29,6 @@ skill:
       color: '#ffbcaa'
 experience:
   enable: true
-education:
-  enable: false
-  title: Road Map
-  item:
-    - title: Genesis Airdrop + HODLers' Staking
-      year: May-June 2021
-      academy: ''
-    - title: LP Farming Tool + Farming Partnerships
-      year: May-June 2021
-      academy: ''
-    - title: Meme Contests + Advertising
-      year: May-June 2021
-      academy: ''
-    - title: DAO, Defi Integrations, and Beyond!
-      year: July- 2021
-      academy: ''
-service:
-  enable: false
-  title: Services
-  item:
-    - title: UI Design
-      icon: ti-palette
-      content:
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      highlighted: false
-    - title: UX Design
-      icon: ti-vector
-      content:
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      highlighted: true
-    - title: Interaction Design
-      icon: ti-panel
-      content:
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      highlighted: false
-portfolio:
-  enabled: false
-  title: Portfolio
-  item_show: '5'
 testimonial:
   enable1: true
   title: Contract Addresses
