@@ -4,13 +4,48 @@ banner:
 about:
   enable: true
   content:
-    "KogeCoin is a deflationary community token that launched via airdrop to all early QuickSwap users on Polygon who had around 4 weeks to claim.
-    \n\nThe original KogeCoin team built [KogeFarm.io](https://kogefarm.io/), an auto-compounding utility built for DeFi users. The KogeCoin project has since been governed by a DAO, with other projects being proposed by community members.
+    "KogeCoin is a deflationary community token that launched via airdrop to all early QuickSwap users who had around 4 weeks to claim.
+    \n\nAll unclaimed KogeCoin tokens are being distributed to through our [farms](https://kogefarm.io/farms).\n\n
+    \n\nKogeCoin holders help govern [KogeFarm.io](https://kogefarm.io/), an auto-compounding utility built for DeFi users.
     "
   button:
     enable: false
     label: Claim Genesis Airdrop
     URL: claimgenesis
+skill:
+  enable: true
+  title: Community Launch Mechanism
+  item:
+    - title: Genesis Airdrop - to All QuickSwap Users
+      progress: 96%
+      color: '#fdb157'
+    - title: HODLers' Staking - unclaimed tokens
+      progress: 90%
+      color: '#9473e6'
+    - title: Marketing - Community Directed
+      progress: 2%
+      color: '#bdecf6'
+    - title: Dev - Development Expenses
+      progress: 2%
+      color: '#ffbcaa'
+experience:
+  enable: true
+education:
+  enable: false
+  title: Road Map
+  item:
+    - title: Genesis Airdrop + HODLers' Staking
+      year: May-June 2021
+      academy: ''
+    - title: LP Farming Tool + Farming Partnerships
+      year: May-June 2021
+      academy: ''
+    - title: Meme Contests + Advertising
+      year: May-June 2021
+      academy: ''
+    - title: DAO, Defi Integrations, and Beyond!
+      year: July- 2021
+      academy: ''
 service:
   enable: false
   title: Services
