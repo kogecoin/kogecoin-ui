@@ -11,22 +11,6 @@ about:
     enable: false
     label: Claim Genesis Airdrop
     URL: claimgenesis
-skill:
-  enable: true
-  title: Community Launch Mechanism
-  item:
-    - title: Genesis Airdrop - to All QuickSwap Users
-      progress: 96%
-      color: '#fdb157'
-    - title: HODLers' Staking - unclaimed tokens
-      progress: 90%
-      color: '#9473e6'
-    - title: Marketing - Community Directed
-      progress: 2%
-      color: '#bdecf6'
-    - title: Dev - Development Expenses
-      progress: 2%
-      color: '#ffbcaa'
 experience:
   enable: true
 testimonial:
