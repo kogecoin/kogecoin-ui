@@ -39,11 +39,6 @@ name = "Blog"
 weight = 1
 
 # menu
-[[menu.main]]
-URL = "howtobuy"
-name = "How to Buy"
-weight = 2
-
 # [[menu.main]]
 # URL = "claimgenesis"
 # name = "Claim Genesis Airdrop"

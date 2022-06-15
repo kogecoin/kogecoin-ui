@@ -5,7 +5,7 @@ about:
   enable: true
   content:
     "KogeCoin is a deflationary community token that launched via airdrop to all early QuickSwap users on Polygon who had around 4 weeks to claim.
-    \n\nThe original KogeCoin team built [KogeFarm.io](https://kogefarm.io/), an auto-compounding utility built for DeFi users. The KogeCoin project has since been governed by a DAO, with other possible projects/initiatives proposed by community members.
+    \n\nThe KogeCoin project has since been governed by a DAO, with possible projects/initiatives proposed by community members. One such project is [KogeFarm.io](https://kogefarm.io/), an auto-compounding utility built for DeFi users.
     "
   button:
     enable: false
@@ -23,8 +23,7 @@ testimonial:
       content: 'KogeCoin Token (Polygon): <a href="https://polygonscan.com/address/0x13748d548D95D78a3c83fe3F32604B4796CFfa23/transactions">0x13748d548D95D78a3c83fe3F32604B4796CFfa23</a><br/>
         KogeCoin Token (MoonRiver): <a href="https://blockscout.moonriver.moonbeam.network/address/0x4f3Aff3A747fCADe12598081e80c6605A8be192F">0x4f3Aff3A747fCADe12598081e80c6605A8be192F</a><br/>
         KogeFarm Dev Wallet (USDC balance = to be used for burning): <a href="https://polygonscan.com/address/0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF/transactions">0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF</a><br/>
-        Dev Wallet: <a href="https://polygonscan.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/>
-        Marketing Wallet: <a href="https://polygonscan.com/address/0x4A170561126a1D765A6B80a081dB639945a8b53b/transactions">0x4A170561126a1D765A6B80a081dB639945a8b53b</a><br/>
+        Deployer Wallet: <a href="https://polygonscan.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/>
         Github: https://github.com/kogecoin/'
 clients_logo_slider:
   enable: false
