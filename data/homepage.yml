@@ -1,0 +1,53 @@
+---
+banner:
+  title: A Multi-Chain Defi <a href="#community-launch">Community</a> Token.
+about:
+  enable: true
+  content:
+    "KogeCoin is a deflationary community token that launched via airdrop to all early QuickSwap users on Polygon who had around 4 weeks to claim.
+    \n\nThe KogeCoin project has since been governed by a DAO, with possible projects/initiatives proposed and developed by community members. One such project is [KogeFarm.io](https://kogefarm.io/), an auto-compounding utility built for DeFi users.
+    "
+  button:
+    enable: false
+    label: Claim Genesis Airdrop
+    URL: claimgenesis
+experience:
+  enable: true
+testimonial:
+  enable1: true
+  title: Contract Addresses
+  item1:
+    - name: ''
+      image: ''
+      designation: ''
+      content: 'KogeCoin Token (Polygon): <a href="https://polygonscan.com/address/0x13748d548D95D78a3c83fe3F32604B4796CFfa23/transactions">0x13748d548D95D78a3c83fe3F32604B4796CFfa23</a><br/>
+        KogeCoin Token (MoonRiver): <a href="https://blockscout.moonriver.moonbeam.network/address/0x4f3Aff3A747fCADe12598081e80c6605A8be192F">0x4f3Aff3A747fCADe12598081e80c6605A8be192F</a><br/>
+        KogeFarm Dev Wallet (USDC balance = to be used for burning): <a href="https://polygonscan.com/address/0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF/transactions">0x85Cf0915C8d3695B03DA739E3eAEfd5388eb5eEF</a><br/>
+        Deployer Wallet: <a href="https://polygonscan.com/address/0x00482B66aa7a69c9982C030cd9627A86288fFA2D/transactions">0x00482B66aa7a69c9982C030cd9627A86288fFA2D</a><br/>
+        Github: https://github.com/kogecoin/'
+clients_logo_slider:
+  enable: false
+  item:
+    - logo: images/clients-logo/client-logo-1.png
+      URL: http://examplesite.com
+    - logo: images/clients-logo/client-logo-2.png
+      URL: '#'
+    - logo: images/clients-logo/client-logo-3.png
+      URL: http://examplesite.com
+    - logo: images/clients-logo/client-logo-4.png
+      URL: '#'
+    - logo: images/clients-logo/client-logo-5.png
+      URL: http://examplesite.com
+    - logo: images/clients-logo/client-logo-1.png
+      URL: '#'
+    - logo: images/clients-logo/client-logo-2.png
+      URL: http://examplesite.com
+    - logo: images/clients-logo/client-logo-3.png
+      URL: '#'
+    - logo: images/clients-logo/client-logo-4.png
+      URL: http://examplesite.com
+    - logo: images/clients-logo/client-logo-5.png
+      URL: '#'
+blog:
+  enable: false
+  title: Blogs

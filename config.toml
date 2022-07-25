@@ -1,0 +1,113 @@
+# default configuration
+baseURL = "https://kogecoin.io"
+languageCode = "en-us"
+summaryLength = "10"
+theme = "kross-hugo"
+title = "KogeCoin.io"
+
+# css plugins
+[[params.plugins.css]]
+URL = "plugins/bootstrap/bootstrap.min.css"
+
+[[params.plugins.css]]
+URL = "plugins/slick/slick.css"
+
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# js plugin
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js"
+
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js"
+
+[[params.plugins.js]]
+URL = "plugins/slick/slick.min.js"
+
+[[params.plugins.js]]
+URL = "plugins/shuffle/shuffle.min.js"
+
+[[menu.main]]
+URL = "https://medium.com/kogecoin"
+name = "Blog"
+weight = 1
+
+# menu
+# [[menu.main]]
+# URL = "claimgenesis"
+# name = "Claim Genesis Airdrop"
+# weight = 3
+
+[[menu.main]]
+URL = "https://kogefarm.io"
+name = "KogeFarm"
+weight = 4
+
+[[menu.main]]
+URL = "https://vote.kogecoin.io"
+# URL = "https://snapshot.js/#/kogecoin.eth"
+name = "Governance"
+weight = 5
+
+# default parameters
+[params]
+home = "Home"
+logo = "images/logo.png"
+# theme color 41228e
+theme_color = "#41228e"
+# contact info
+phone = ""
+email = ""
+address = ""
+# meta description
+author = "The Community"
+description = "KogeCoin is a deflationary native token of the KogeFarm yield aggreator service."
+# google analitycs
+google_analitycs_id = "Your ID"
+# copyright
+copyright = "Perfomance. Community. Security. Pure Koge."
+twitter = "https://twitter.com/kogecoin"
+telegram = "https://t.me/kogecoin"
+medium = "https://medium.com/@kogecoin"
+
+
+# contact
+[params.contact]
+enable = false
+form_action = "#" # contact form works with : https://formspree.io
+
+# preloader
+[params.preloader]
+enable = true
+preloader = "" # use png, jpg, svg or gif format
+
+# social site
+[[params.social]]
+URL = "https://twitter.com/kogecoin"
+icon = "twitter-alt"
+
+[[params.social]]
+URL = "https://github.com/kogecoin"
+icon = "ti-github-alt"
+
+[[params.social]]
+URL = "https://t.me/kogecoin"
+icon = "ti-telegram-alt"
+
+[[params.social]]
+URL = "https://medium.com/kogecoin"
+icon = "ti-medium-alt"
+
+[[parmas.social]]
+URL = "https://discord.gg/xDsnS3TSVA"
+icon = "ti-discord-alt"
+
+[[params.social]]
+URL = "https://www.reddit.com/r/kogecoin"
+icon = "ti-reddit-alt"

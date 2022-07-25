@@ -1,0 +1,410 @@
+{{ define "main" }}
+
+
+  <!-- hero area -->
+  <section class="hero-area bg-primary overflow-hidden" id="parallax">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <h1 class="text-white font-tertiary">{{ .Site.Data.homepage.banner.title | safeHTML }}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="layer-bg w-100">
+      <img class="img-fluid w-100" src="{{`images/illustrations/leaf-bg.png` | relURL}}" alt="bg-shape">
+    </div>
+    <div class="layer" id="l2">
+      <img src="{{`images/illustrations/dots-cyan.svg` | relURL}}" alt="bg-shape">
+    </div>
+    <!--
+    <div class="layer" id="l3">
+      <img src="{{`images/illustrations/leaf-orange.svg` | relURL}}" alt="bg-shape">
+    </div>
+    <div class="layer" id="l4">
+      <img src="{{`images/illustrations/dots-orange.svg` | relURL}}" alt="bg-shape">
+    </div>
+    <div class="layer" id="l5">
+      <img src="{{`images/illustrations/leaf-yellow.svg` | relURL}}" alt="bg-shape">
+    </div>
+    <div class="layer" id="l6">
+      <img src="{{`images/illustrations/leaf-cyan.svg` | relURL}}" alt="bg-shape">
+    </div>-->
+    <div class="layer" id="l7">
+      <img src="{{`images/illustrations/dots-group-orange.svg` | relURL}}" alt="bg-shape">
+    </div>
+    <!--
+    <div class="layer" id="l8">
+      <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL}}" alt="bg-shape">
+    </div> -->
+    <!--
+    <div class="layer" id="l9">
+      <img src="{{`images/illustrations/leaf-cyan-2.svg` | relURL}}" alt="bg-shape">
+    </div>-->
+    <!-- social icon -->
+    <!--
+    <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+      {{ range .Site.Params.social }}
+      <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
+      {{ end }}
+    </ul>  -->
+    <!-- /social icon -->
+  </section>
+  <!-- /hero area -->
+
+  {{ if .Site.Data.homepage.about.enable }}
+  <!-- about -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          {{ with .Site.Data.homepage.about }}
+          <p class="font-secondary lead text-dark">{{.content | markdownify}}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
+  {{ end }}
+
+
+  {{ if .Site.Data.homepage.skill.enable }}
+  {{ with .Site.Data.homepage.skill }}
+  <!-- skills -->
+  <section class="section" id="community-launch">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
+        </div>
+        {{ range .item }}
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="{{.color}}">
+              <div class="wave" data-progress="{{.progress}}"></div>
+            </div>
+            <div class="card-footer bg-black">
+              <h4 class="card-title">{{.title }} ({{.progress}})</h4>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- /skills -->
+  {{ end }}
+  {{ end }}
+
+  {{ if .Site.Data.homepage.experience.enable }}
+  {{ with .Site.Data.homepage.experience }}
+  <!-- Tokenomics -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">Tokenomics</h2>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/icon-1.png" alt="icon">
+          <p class="mb-0"></p>
+          <h4>Initial/Maximum Supply</h4>
+          <h6 class="text-light"><span class="showTotalSupply">50,000,000</span></h6>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/icon-1.png" alt="icon">
+          <p class="mb-0"></p>
+          <h4>Circulating Supply</h4>
+          <h6 class="text-light"><span class="showCurrentSupply">Loading</span></h6>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/icon-2.png" alt="icon">
+          <p class="mb-0"></p>
+          <h4>Tokens Burned</h4>
+          <h6 class="text-light"><span class="showSupplyBurned">Loading</span></h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Tokenomics -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">Live Statistics</h2>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <p class="mb-0"></p>
+          <h4>Price (Polygon)</h4>
+          <h5><span class="showQuickSwapPrice">Loading</span></h5>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <p class="mb-0"></p>
+          <h4>Fully Diluted Market Cap</h4>
+          <h5><span class="showMarketCap">Loading</span></h5>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <p class="mb-0"></p>
+          <h4>Circulating Market Cap</h4>
+          <h5><span class="showCMarketCap">Loading</span></h5>
+        </div>
+        <div class="col-lg-12 text-center">
+          <br/>
+          <br/>
+          <h6 class="text-light">*If you'd like to supply liquidity and earn trade fees, our main trading pair on QuickSwap is KOGECOIN-MATIC. Liquidity providers are able to stake their LP tokens at <a href="https://kogefarm.io/farms">KogeFarm.io/farms</a> to earn additional rewards after June 10.</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /experience -->
+  {{ end }}
+  {{ end }}
+
+  {{ if .Site.Data.homepage.education.enable }}
+  {{ with .Site.Data.homepage.education }}
+  <!-- education -->
+  <section class="section position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
+        </div>
+        {{ range .item }}
+        <div class="col-lg-6 col-md-6 mb-80">
+          <div class="d-flex">
+            <div class="mr-lg-5 mr-3">
+              <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+            </div>
+            <div>
+              <p class="text-dark mb-1">{{.year}}</p>
+              <h4>{{ .title }}</h4>
+              <p class="mb-0 text-light">{{.academy}}</p>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+        <div class="col-lg-12 text-center"><p>For a more detailed roadmap, check out: <a href="https://koge.gitbook.io/kogefarm/roadmap">https://koge.gitbook.io/kogefarm/roadmap</a>.</p></div>
+      </div>
+    </div>
+    <!-- bg image -->
+    <img class="img-fluid edu-bg-image w-100" src="{{`images/backgrounds/education-bg.png`|relURL}}" alt="bg-image">
+  </section>
+  <!-- /education -->
+  {{ end }}
+  {{ end }}
+
+
+  {{ if .Site.Data.homepage.service.enable }}
+  {{ with .Site.Data.homepage.service }}
+  <!-- services -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
+        </div>
+        {{ range .item }}
+        <div class="col-md-4 mb-4">
+          <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
+            <div class="card-body text-center px-4 py-5">
+              <i class="{{.icon }} icon mb-5 d-inline-block"></i>
+              <h4 class="mb-4">{{.title}}</h4>
+              <p>{{.content | markdownify}}</p>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- /services -->
+  {{ end }}
+  {{ end }}
+
+
+  {{ if .Site.Data.homepage.portfolio.enable }}
+  <!-- portfolio -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ .Site.Data.homepage.portfolio.title | markdownify }}</h2>
+        </div>
+      </div>
+      <div class="row shuffle-wrapper">
+        {{ $item:= .Site.Data.homepage.portfolio.item_show }}
+        {{ range first $item .Site.Data.portfolio.item }}
+        <div class="col-lg-4 col-6 mb-4 shuffle-item">
+          <div class="position-relative rounded hover-wrapper">
+            <img src="{{.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+            {{ if and ( ne .project_url "" ) ( ne .project_url "#" ) }}
+            <div class="hover-overlay">
+              <div class="hover-content">
+                <a class="btn btn-light btn-sm" href="{{ .project_url | safeURL }}">view project</a>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- /portfolio -->
+  {{ end }}
+
+
+  {{ if .Site.Data.homepage.testimonial.enable }}
+  {{ with .Site.Data.homepage.testimonial }}
+  <!-- testimonial -->
+  <section class="section bg-gray position-relative testimonial-bg-shapes">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title mb-5">{{ .title | markdownify }}</h2>
+        </div>
+        <div class="col-lg-10">
+          {{ range .item }}
+          <!-- slider-item -->
+          <div class="text-left">
+<!--            <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i> -->
+            <p class="mb-4">{{.content | markdownify}}</p>
+<!--            <img class="img-fluid rounded-circle mb-4 d-inline-block" src="{{.image | absURL }}" alt="client-image"> -->
+<!--             <h4 class="text-white">{{.name }}</h4> -->
+<!--             <h6 class="text-light mb-4">{{ .designation }}</h6> -->
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    <!-- bg shapes -->
+    <img src="{{`images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map">
+    <img src="{{`images/illustrations/dots-group-v.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-1">
+<!--    <img src="{{`images/illustrations/leaf-orange.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-2"> -->
+    <img src="{{`images/illustrations/dots-group-sm.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-3">
+<!--    <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-4"> -->
+<!--    <img src="{{`images/illustrations/leaf-cyan.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-5"> -->
+  </section>
+  <!-- /testimonial -->
+  {{ end }}
+  {{ end }}
+
+
+  {{ if .Site.Data.homepage.clients_logo_slider.enable }}
+  <!-- client logo slider -->
+  <section class="section pb-0">
+    <div class="container">
+      {{ partial "client-slider.html" . }}
+    </div>
+  </section>
+  <!-- /client logo slider -->
+  {{ end }}
+
+  {{ if .Site.Data.homepage.blog.enable }}
+  <!-- blog -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{.Site.Data.homepage.blog.title | markdownify }}</h2>
+        </div>
+        {{ range first 3 .Site.RegularPages }}
+        {{ .Render "post" }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- /blog -->
+  {{ end }}
+
+
+  <script>
+    const web3 = new Web3(new Web3.providers.HttpProvider("https://polygon-rpc.com"))
+
+    const abi = [
+      {
+        "inputs": [],
+        "name": "totalFees",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "totalSupply",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs":[{"internalType":"address","name":"account","type":"address"}],
+        "name":"balanceOf",
+        "outputs":[
+          {"internalType":"uint256",
+          "name":"",
+          "type":"uint256"
+          }
+        ],
+        "stateMutability":"view",
+        "type":"function"
+      }
+    ];
+
+    const fundABI = [{"inputs":[],"name":"balance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"}];
+
+    const abiQuickSwap = [{"type":"function","stateMutability":"view","outputs":[{"type":"uint256[]","name":"amounts","internalType":"uint256[]"}],"name":"getAmountsIn","inputs":[{"type":"uint256","name":"amountOut","internalType":"uint256"},{"type":"address[]","name":"path","internalType":"address[]"}]},{"type":"function","stateMutability":"view","outputs":[{"type":"uint256[]","name":"amounts","internalType":"uint256[]"}],"name":"getAmountsOut","inputs":[{"type":"uint256","name":"amountIn","internalType":"uint256"},{"type":"address[]","name":"path","internalType":"address[]"}]}]
+
+    var contract = new web3.eth.Contract(abi,"0x13748d548D95D78a3c83fe3F32604B4796CFfa23");
+    var QuickSwapContract = new web3.eth.Contract(abiQuickSwap,"0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff");
+    var FundContract = new web3.eth.Contract(fundABI,"0x6A82FdE3033a969cf1ECe48D76aA942E9Fc567Db");
+
+    const showTotalSupply = document.querySelector('.showTotalSupply');
+    const showCurrentSupply = document.querySelector('.showCurrentSupply');
+    const showQuickSwapPrice = document.querySelector('.showQuickSwapPrice');
+    const showMarketCap = document.querySelector('.showMarketCap');
+    const showCMarketCap = document.querySelector('.showCMarketCap');
+    const showSupplyBurned = document.querySelector('.showSupplyBurned');
+
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+   const getSupply = async function(){
+      const totalSupply = await contract.methods.totalSupply.call().call();
+      showTotalSupply.innerHTML = numberWithCommas(~~(totalSupply/1000000000));
+      const totalFees = await contract.methods.totalFees.call().call();
+      const FundAmt = await FundContract.methods.balance.call().call();
+      const totalBurned = await contract.methods.balanceOf("0x0000000000000000000000000000000000000001").call();
+      showSupplyBurned.innerHTML = numberWithCommas(~~(totalFees/1000000000 + totalBurned/1000000000));
+      showCurrentSupply.innerHTML = numberWithCommas(~~((totalSupply-totalFees-totalBurned-FundAmt)/1000000000));
+      const QuickSwapAmt = await QuickSwapContract.methods.getAmountsOut(100000,["0x2791bca1f2de4661ed88a30c99a7a9449aa84174","0x13748d548D95D78a3c83fe3F32604B4796CFfa23"]).call();
+      showQuickSwapPrice.innerHTML = '$' + Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*1000000)/1000000;
+      showMarketCap.innerHTML = '$' + numberWithCommas(Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*(totalSupply-totalFees)/1000000000));
+      showCMarketCap.innerHTML = '$' + numberWithCommas(Math.round(QuickSwapAmt[0]/QuickSwapAmt[1]*1000*(totalSupply-totalFees-FundAmt)/1000000000));
+    }
+
+
+
+    getSupply();
+
+
+  </script>
+
+{{ end }}

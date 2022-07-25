@@ -1,0 +1,8 @@
+.DS_Store
+Launch-Statements.docx
+*.docx
+.hugo_build.lock
+# Local Netlify folder
+.netlify
+node_modules
+package-lock.json

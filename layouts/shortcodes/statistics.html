@@ -1,0 +1,52 @@
+<script>
+  const web3 = new Web3(new Web3.providers.HttpProvider("https://rpc-mainnet.maticvigil.com/v1/220e0ab20e859479dc3ece462f4d5699cd701a6b"))
+
+  const abi = [
+    {
+      "inputs": [],
+      "name": "totalFees",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ];
+
+  var contract = new web3.eth.Contract(abi,"0x13748d548D95D78a3c83fe3F32604B4796CFfa23");
+
+  const showCurrentSupply = document.querySelector('.showCurrentSupply');
+
+  function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+ const getSupply = async function(){
+    const totalSupply = await contract.methods.totalSupply.call().call();
+    showTotalSuply.innerHTML = ~~(totalSupply/1000000000);
+    let totalFees = await contract.methods.totalFees.call().call();
+    totalFees = totalFees + 44321808446589
+    showCurrentSupply.innerHTML = ~~((totalSupply-totalFees)/1000000000);
+  }
+
+  getSupply();
+
+
+</script>
